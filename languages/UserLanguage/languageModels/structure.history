@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<history>
+  <StructureModification>
+    <dependencies>
+      <model index="9d4a" modelUID="r:d9f0b3b3-c216-4ce3-800c-e37636626e8c(UserLanguage.structure)" version="-1" />
+    </dependencies>
+    <rename id="9d4a.2237904536747810224" type="CHILD" from="Ava" to="extensions" />
+  </StructureModification>
+</history>
+

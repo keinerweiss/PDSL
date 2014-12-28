@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<history>
+  <StructureModification>
+    <dependencies>
+      <model index="guq0" modelUID="r:424c65cf-f1d2-449a-a330-4dcce5269a11(TYPO3System.structure)" version="-1" />
+    </dependencies>
+    <rename id="guq0.4446906832555664307" type="PROPERTY" from="login" to="email" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="guq0" modelUID="r:424c65cf-f1d2-449a-a330-4dcce5269a11(TYPO3System.structure)" version="0" />
+    </dependencies>
+    <rename id="guq0.4446906832555668021" type="REFERENCE" from="e" to="feature" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="guq0" modelUID="r:424c65cf-f1d2-449a-a330-4dcce5269a11(TYPO3System.structure)" version="1" />
+    </dependencies>
+    <rename id="guq0.4446906832555667505" type="CONCEPT" from="Roles" to="Role" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="guq0" modelUID="r:424c65cf-f1d2-449a-a330-4dcce5269a11(TYPO3System.structure)" version="2" />
+    </dependencies>
+    <rename id="guq0.4446906832555664304" type="CONCEPT" from="Users" to="User" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="guq0" modelUID="r:424c65cf-f1d2-449a-a330-4dcce5269a11(TYPO3System.structure)" version="3" />
+    </dependencies>
+    <rename id="guq0.3598894899136336838" type="REFERENCE" from="extention" to="Extension" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="guq0" modelUID="r:424c65cf-f1d2-449a-a330-4dcce5269a11(TYPO3System.structure)" version="4" />
+    </dependencies>
+    <rename id="guq0.3598894899136407843" type="CONCEPT" from="ExtensionReference" to="ExtensionRef" />
+  </StructureModification>
+</history>
+

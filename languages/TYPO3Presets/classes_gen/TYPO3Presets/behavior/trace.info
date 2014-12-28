@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debugInfo>
+  <unitInfo fileName="AbstractPreset_BehaviorDescriptor.java" startLine="10" startPosition="0" endLine="23" endPosition="0" unitName="TYPO3Presets.behavior.AbstractPreset_BehaviorDescriptor" />
+  <unitInfo fileName="BehaviorAspectDescriptor.java" startLine="9" startPosition="0" endLine="32" endPosition="0" unitName="TYPO3Presets.behavior.BehaviorAspectDescriptor" />
+  <unitInfo fileName="Extension_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="TYPO3Presets.behavior.Extension_BehaviorDescriptor" />
+  <unitInfo fileName="PresetRef_BehaviorDescriptor.java" startLine="6" startPosition="0" endLine="15" endPosition="0" unitName="TYPO3Presets.behavior.PresetRef_BehaviorDescriptor" />
+  <unitInfo fileName="Preset_BehaviorDescriptor.java" startLine="6" startPosition="0" endLine="15" endPosition="0" unitName="TYPO3Presets.behavior.Preset_BehaviorDescriptor" />
+  <unitInfo fileName="Version_BehaviorDescriptor.java" startLine="10" startPosition="0" endLine="23" endPosition="0" unitName="TYPO3Presets.behavior.Version_BehaviorDescriptor" />
+</debugInfo>
+

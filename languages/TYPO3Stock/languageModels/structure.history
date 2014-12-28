@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<history>
+  <StructureModification>
+    <dependencies>
+      <model index="k5kc" modelUID="r:b7a865c5-34fe-4061-a116-63a7e68a4f2f(TYPO3Presets.structure)" version="2" />
+      <model index="xkfh" modelUID="r:a43fb49c-b6c0-4d4f-851b-48276855d059(TYPO3Stock.structure)" version="-1" />
+    </dependencies>
+    <move id="k5kc.3598894899136322353" to="xkfh.3598894899136486578" />
+    <move id="k5kc.3598894899136389566" to="xkfh.3598894899136486582" />
+    <move id="k5kc.4446906832555667619" to="xkfh.3598894899136486585" />
+    <move id="k5kc.4446906832555669735" to="xkfh.3598894899136486575" />
+    <move id="k5kc.3598894899136387144" to="xkfh.3598894899136486579" />
+    <move id="k5kc.4446906832555669678" to="xkfh.3598894899136486574" />
+    <move id="k5kc.4446906832555667617" to="xkfh.3598894899136486584" />
+    <move id="k5kc.3598894899136472998" to="xkfh.3598894899136486586" />
+    <move id="k5kc.3598894899136472999" to="xkfh.3598894899136486587" />
+    <move id="k5kc.3598894899136389563" to="xkfh.3598894899136486581" />
+    <move id="k5kc.3598894899136387147" to="xkfh.3598894899136486580" />
+    <move id="k5kc.4446906832555669739" to="xkfh.3598894899136486576" />
+    <move id="k5kc.4446906832555669775" to="xkfh.3598894899136486589" />
+    <move id="k5kc.4446906832555669742" to="xkfh.3598894899136486577" />
+    <move id="k5kc.4446906832555669774" to="xkfh.3598894899136486588" />
+    <move id="k5kc.4446906832555667616" to="xkfh.3598894899136486583" />
+  </StructureModification>
+</history>
+
