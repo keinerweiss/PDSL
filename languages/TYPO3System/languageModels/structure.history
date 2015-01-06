@@ -36,5 +36,29 @@
     </dependencies>
     <rename id="guq0.3598894899136407843" type="CONCEPT" from="ExtensionReference" to="ExtensionRef" />
   </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="guq0" modelUID="r:424c65cf-f1d2-449a-a330-4dcce5269a11(TYPO3System.structure)" version="5" />
+    </dependencies>
+    <rename id="guq0.4446906832555667525" type="CONCEPT" from="Extension" to="ExtensionRefRef" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="guq0" modelUID="r:424c65cf-f1d2-449a-a330-4dcce5269a11(TYPO3System.structure)" version="6" />
+    </dependencies>
+    <rename id="guq0.4446906832555667525" type="CONCEPT" from="ExtensionRefRef" to="ExtensionRef" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="guq0" modelUID="r:424c65cf-f1d2-449a-a330-4dcce5269a11(TYPO3System.structure)" version="7" />
+    </dependencies>
+    <rename id="guq0.4446906832555667525" type="CONCEPT" from="ExtensionRef" to="ExtensionRef_system" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="guq0" modelUID="r:424c65cf-f1d2-449a-a330-4dcce5269a11(TYPO3System.structure)" version="8" />
+    </dependencies>
+    <rename id="guq0.4446906832555664295" type="CONCEPT" from="Feature" to="Feature_system" />
+  </StructureModification>
 </history>
 

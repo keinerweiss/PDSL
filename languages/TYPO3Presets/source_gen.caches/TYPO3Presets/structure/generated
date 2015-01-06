@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dependencies version="2" modelHash="-8bjsrg9lcioyldak0eg8numo28c0e6f">
+<dependencies version="2" modelHash="-60mgtbv44q2bauk94al6ljzu65hacav">
   <dep model="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" hash="5sdbpqxziyuazpb9j1p4zdk6bnvbn49" />
   <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" hash="-5mgxduek28h3ywdzzsk4capaz4hgjm0" />
   <dep model="r:00000000-0000-4000-0000-011c895902cd(jetbrains.mps.baseLanguage.generator.java.main@generator)" hash="303xz1b2lyseld0axia86q3lpvucmq6" />
   <dep model="r:b4d7d620-6723-4aa2-856b-118497e84e9e(jetbrains.mps.baseLanguage.generator.java.strings@generator)" hash="b4ewbuz42qcbg1awca5bacgi0vopxqt" />
+  <dep model="r:cc253de2-9198-4f52-9f3f-23596c670e7b(SoftwareSystems.structure)" hash="-33q12z96ukryu1slns504q4uf86hx5v" />
   <dep model="r:f04c1476-2f91-4f59-be13-c8e009abebee(jetbrains.mps.baseLanguageInternal.generator.template.main@generator)" hash="a8elw7fctzg6sg8fe36u9gzu42axhdb" />
-  <common hash="-siavxxuiahnyvhsstxh5cb0xk8mid0" dependsOnNodes="true">
+  <common hash="-38tmym0k5bjtu71qod4d0wdb5cf8c8s" dependsOnNodes="true">
     <dep root="3598894899136198537" />
-    <dep root="3598894899136216469" />
     <dep root="3598894899136493544" />
     <dep root="4446906832555667564" />
     <dep root="4446906832555669752" />
@@ -15,13 +15,13 @@
     <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
     <dep model="r:00000000-0000-4000-0000-011c895902cd(jetbrains.mps.baseLanguage.generator.java.main@generator)" />
     <dep model="r:b4d7d620-6723-4aa2-856b-118497e84e9e(jetbrains.mps.baseLanguage.generator.java.strings@generator)" />
+    <dep model="r:cc253de2-9198-4f52-9f3f-23596c670e7b(SoftwareSystems.structure)" />
     <dep model="r:f04c1476-2f91-4f59-be13-c8e009abebee(jetbrains.mps.baseLanguageInternal.generator.template.main@generator)" />
     <file name="StructureAspectDescriptor.java" />
   </common>
-  <source id="4446906832555667564" name="Preset" hash="-dyp80zh6bq7hajekeletr2onhumsfde" />
-  <source id="4446906832555669752" name="Version" hash="-4t209ls78odoh6gf07np25cxn2g2d1s" />
-  <source id="3598894899136198537" name="PresetRef" hash="1mn7qg9rozu24s58ysfrqd4q7m0r43" />
-  <source id="3598894899136216469" name="AbstractPreset" hash="-7iay56do8khi3hxl6dnwcakowpv4gx0" />
-  <source id="3598894899136493544" name="Extension" hash="8asf3xj31bi3tvpvm4e64ivt8q6r8kq" />
+  <source id="4446906832555667564" name="Preset" hash="-9wlau75now9oe2pq2d2yl6awoxbqp1c" />
+  <source id="4446906832555669752" name="VersionRef" hash="-1l7gbxxovpgo2q4fz52flpsfz7evuv3" />
+  <source id="3598894899136198537" name="PresetRef" hash="47u4agrbcl8ubote8agdw27k94owhsp" />
+  <source id="3598894899136493544" name="ExtensionRef_preset" hash="-4pqi8v0prmhdscd5u5ya8k29nbmput8" />
 </dependencies>
 

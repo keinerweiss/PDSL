@@ -14,11 +14,13 @@ public class StructureAspectDescriptor implements jetbrains.mps.smodel.runtime.S
   public ConceptDescriptor getDescriptor(String conceptFqName) {
     switch (Arrays.binarySearch(stringSwitchCases_1htk8d_a0a0b, conceptFqName)) {
       case 0:
-        return new ConceptDescriptorBuilder("SoftwareSystems.structure.SoftwareSystem").super_("jetbrains.mps.lang.core.structure.BaseConcept").parents("jetbrains.mps.lang.core.structure.BaseConcept", "jetbrains.mps.lang.core.structure.INamedConcept").alias("softwaresystem", "Software System Basis").create();
+        return new ConceptDescriptorBuilder("SoftwareSystems.structure.AbstractPreset").super_("jetbrains.mps.lang.core.structure.BaseConcept").parents("jetbrains.mps.lang.core.structure.BaseConcept", "jetbrains.mps.lang.core.structure.INamedConcept").create();
+      case 1:
+        return new ConceptDescriptorBuilder("SoftwareSystems.structure.SoftwareSystem").super_("jetbrains.mps.lang.core.structure.BaseConcept").parents("jetbrains.mps.lang.core.structure.BaseConcept", "jetbrains.mps.lang.core.structure.INamedConcept").references("Preset").alias("softwaresystem", "Software System Basis").create();
       default:
         return StructureAspectInterpreted.getInstance().getDescriptor(conceptFqName);
     }
   }
 
-  private static String[] stringSwitchCases_1htk8d_a0a0b = new String[]{"SoftwareSystems.structure.SoftwareSystem"};
+  private static String[] stringSwitchCases_1htk8d_a0a0b = new String[]{"SoftwareSystems.structure.AbstractPreset", "SoftwareSystems.structure.SoftwareSystem"};
 }

@@ -26,12 +26,17 @@
     </generator>
   </generators>
   <sourcePath />
+  <dependencies>
+    <dependency reexport="false">495d58bd-a3be-4d08-afa4-5fa0caf8fb22(TYPO3Presets)</dependency>
+  </dependencies>
   <usedLanguages>
     <usedLanguage>06704a88-e86a-4278-bbb6-e45fc0eeb218(SystemPresets)</usedLanguage>
   </usedLanguages>
   <usedDevKits>
     <usedDevKit>2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)</usedDevKit>
   </usedDevKits>
-  <extendedLanguages />
+  <extendedLanguages>
+    <extendedLanguage>ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)</extendedLanguage>
+  </extendedLanguages>
 </language>
 

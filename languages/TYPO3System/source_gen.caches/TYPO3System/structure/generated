@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dependencies version="2" modelHash="-86uq7yeml5711oz6760b8fvmfi1x9xc">
+<dependencies version="2" modelHash="d7zearr0ore5m421xdseim8umnn73jr">
   <dep model="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" hash="5sdbpqxziyuazpb9j1p4zdk6bnvbn49" />
   <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" hash="-5mgxduek28h3ywdzzsk4capaz4hgjm0" />
   <dep model="r:00000000-0000-4000-0000-011c895902cd(jetbrains.mps.baseLanguage.generator.java.main@generator)" hash="303xz1b2lyseld0axia86q3lpvucmq6" />
   <dep model="r:b4d7d620-6723-4aa2-856b-118497e84e9e(jetbrains.mps.baseLanguage.generator.java.strings@generator)" hash="b4ewbuz42qcbg1awca5bacgi0vopxqt" />
-  <dep model="r:cc253de2-9198-4f52-9f3f-23596c670e7b(SoftwareSystems.structure)" hash="-bdq734jkwwfnw3i5ivxn2dyjx1jenlq" />
+  <dep model="r:cc253de2-9198-4f52-9f3f-23596c670e7b(SoftwareSystems.structure)" hash="-33q12z96ukryu1slns504q4uf86hx5v" />
   <dep model="r:f04c1476-2f91-4f59-be13-c8e009abebee(jetbrains.mps.baseLanguageInternal.generator.template.main@generator)" hash="a8elw7fctzg6sg8fe36u9gzu42axhdb" />
-  <common hash="-8yd0tjlytcmej6bo1tehmnvjn62k2nu" dependsOnNodes="true">
+  <common hash="-5wxipt040xsesm1w4yihddnnwiakbp" dependsOnNodes="true">
+    <dep root="25423937595248051" />
     <dep root="3598894899136164059" />
     <dep root="3598894899136249428" />
     <dep root="4446906832555664067" />
@@ -22,12 +23,13 @@
     <dep model="r:f04c1476-2f91-4f59-be13-c8e009abebee(jetbrains.mps.baseLanguageInternal.generator.template.main@generator)" />
     <file name="StructureAspectDescriptor.java" />
   </common>
-  <source id="4446906832555664067" name="TYPO3System" hash="3v9kbr61naegbascr7w9cm74jutp85c" />
-  <source id="4446906832555664295" name="Feature" hash="-dcyyax7hsdnh4rfs4e7uaxxfwmfph86" />
-  <source id="4446906832555664304" name="User" hash="6fjheo0l1g19otv6irg1aoo0ta2xq96" />
+  <source id="4446906832555664067" name="TYPO3System" hash="-7l0ocv6fwsii4dpeez05t5f9xc1mcxj" />
+  <source id="4446906832555664295" name="Feature_system" hash="-55nrqsmosqt921abluyzm9erpu25mrw" />
+  <source id="4446906832555664304" name="User" hash="cizbiopnmmavspi2ou5er28oxka8b7d" />
   <source id="4446906832555667505" name="Role" hash="-23b1vovfc0kprpz4x7aaua9m1u93udx" />
-  <source id="4446906832555667525" name="Extension" hash="-41ej97trux8nwfdzmsfjvarajjuzmj8" />
+  <source id="4446906832555667525" name="ExtensionRef_system" hash="6cuomv1ackukro7tdaxwhqbusg0jt0c" />
   <source id="3598894899136164059" name="RoleRef" hash="-c2gh6812aekwbl37pqetuqnj2ulpl5i" />
   <source id="3598894899136249428" name="AbstractRole" hash="-4we5bmgil63mhrh6mvlthjfj5ig2t94" />
+  <source id="25423937595248051" name="Tenant" hash="1nu36kmensrje0mz2jcqeaee4n6b723" />
 </dependencies>
 

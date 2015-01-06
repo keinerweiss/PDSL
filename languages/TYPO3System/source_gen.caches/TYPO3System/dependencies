@@ -2,6 +2,7 @@
 <dependenciesRoot>
   <dependency className="TYPO3System.Language" file="Language.java">
     <classNode dependClassName="TYPO3System.editor.EditorAspectDescriptorImpl" />
+    <classNode dependClassName="TYPO3System.typesystem.TypesystemDescriptor" />
     <classNode dependClassName="java.lang.Class" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />

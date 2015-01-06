@@ -16,7 +16,6 @@
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
   <dependency className="UserLanguage.behavior.System_Behavior" file="System_Behavior.java">
-    <classNode dependClassName="com.sample.JessTest" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
   </dependency>
   <dependency className="UserLanguage.behavior.System_BehaviorDescriptor" file="System_BehaviorDescriptor.java">

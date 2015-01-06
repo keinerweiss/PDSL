@@ -14,17 +14,27 @@ public class StructureAspectDescriptor implements jetbrains.mps.smodel.runtime.S
   public ConceptDescriptor getDescriptor(String conceptFqName) {
     switch (Arrays.binarySearch(stringSwitchCases_1htk8d_a0a0b, conceptFqName)) {
       case 0:
-        return new ConceptDescriptorBuilder("TYPO3Stock.structure.Extension").super_("jetbrains.mps.lang.core.structure.BaseConcept").parents("jetbrains.mps.lang.core.structure.BaseConcept", "jetbrains.mps.lang.core.structure.INamedConcept").properties("version", "source").references("Preconfiguration").alias("extension", "").create();
+        return new ConceptDescriptorBuilder("TYPO3Stock.structure.Extension").super_("jetbrains.mps.lang.core.structure.BaseConcept").parents("jetbrains.mps.lang.core.structure.BaseConcept", "jetbrains.mps.lang.core.structure.INamedConcept").properties("version", "source").references("Preconfiguration").children(new String[]{"incompatibleExtensions", "incompatibleTYPO3Versions", "incompatibleFeatures"}, new boolean[]{true, true, true}).alias("extension", "").create();
       case 1:
-        return new ConceptDescriptorBuilder("TYPO3Stock.structure.Feature").super_("jetbrains.mps.lang.core.structure.BaseConcept").parents("jetbrains.mps.lang.core.structure.BaseConcept", "jetbrains.mps.lang.core.structure.INamedConcept").properties("id").alias("feature", "").create();
+        return new ConceptDescriptorBuilder("TYPO3Stock.structure.ExtensionRef_stock").super_("jetbrains.mps.lang.core.structure.BaseConcept").parents("jetbrains.mps.lang.core.structure.BaseConcept").references("extension").create();
       case 2:
-        return new ConceptDescriptorBuilder("TYPO3Stock.structure.Purpose").super_("jetbrains.mps.lang.core.structure.BaseConcept").parents("jetbrains.mps.lang.core.structure.BaseConcept", "jetbrains.mps.lang.core.structure.INamedConcept").alias("purpose", "").create();
+        return new ConceptDescriptorBuilder("TYPO3Stock.structure.Feature").super_("jetbrains.mps.lang.core.structure.BaseConcept").parents("jetbrains.mps.lang.core.structure.BaseConcept", "jetbrains.mps.lang.core.structure.INamedConcept").properties("id").alias("feature", "").create();
       case 3:
-        return new ConceptDescriptorBuilder("TYPO3Stock.structure.Stock").super_("jetbrains.mps.lang.core.structure.BaseConcept").parents("jetbrains.mps.lang.core.structure.BaseConcept").children(new String[]{"Extensions", "Features", "Purpose"}, new boolean[]{true, true, true}).create();
+        return new ConceptDescriptorBuilder("TYPO3Stock.structure.FeatureRef").super_("jetbrains.mps.lang.core.structure.BaseConcept").parents("jetbrains.mps.lang.core.structure.BaseConcept").references("feature").create();
+      case 4:
+        return new ConceptDescriptorBuilder("TYPO3Stock.structure.Purpose").super_("jetbrains.mps.lang.core.structure.BaseConcept").parents("jetbrains.mps.lang.core.structure.BaseConcept", "jetbrains.mps.lang.core.structure.INamedConcept").alias("purpose", "").create();
+      case 5:
+        return new ConceptDescriptorBuilder("TYPO3Stock.structure.PurposeRef").super_("jetbrains.mps.lang.core.structure.BaseConcept").parents("jetbrains.mps.lang.core.structure.BaseConcept").references("purpose").create();
+      case 6:
+        return new ConceptDescriptorBuilder("TYPO3Stock.structure.Stock").super_("jetbrains.mps.lang.core.structure.BaseConcept").parents("jetbrains.mps.lang.core.structure.BaseConcept").children(new String[]{"TYPO3Versions", "Extensions", "Features", "Purpose"}, new boolean[]{true, true, true, true}).create();
+      case 7:
+        return new ConceptDescriptorBuilder("TYPO3Stock.structure.Version").super_("jetbrains.mps.lang.core.structure.BaseConcept").parents("jetbrains.mps.lang.core.structure.BaseConcept", "jetbrains.mps.lang.core.structure.INamedConcept").create();
+      case 8:
+        return new ConceptDescriptorBuilder("TYPO3Stock.structure.VersionRef").super_("jetbrains.mps.lang.core.structure.BaseConcept").parents("jetbrains.mps.lang.core.structure.BaseConcept").references("version").create();
       default:
         return StructureAspectInterpreted.getInstance().getDescriptor(conceptFqName);
     }
   }
 
-  private static String[] stringSwitchCases_1htk8d_a0a0b = new String[]{"TYPO3Stock.structure.Extension", "TYPO3Stock.structure.Feature", "TYPO3Stock.structure.Purpose", "TYPO3Stock.structure.Stock"};
+  private static String[] stringSwitchCases_1htk8d_a0a0b = new String[]{"TYPO3Stock.structure.Extension", "TYPO3Stock.structure.ExtensionRef_stock", "TYPO3Stock.structure.Feature", "TYPO3Stock.structure.FeatureRef", "TYPO3Stock.structure.Purpose", "TYPO3Stock.structure.PurposeRef", "TYPO3Stock.structure.Stock", "TYPO3Stock.structure.Version", "TYPO3Stock.structure.VersionRef"};
 }

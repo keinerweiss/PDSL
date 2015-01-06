@@ -5,6 +5,7 @@ package TYPO3System;
 import jetbrains.mps.smodel.language.LanguageRuntime;
 import TYPO3System.editor.EditorAspectDescriptorImpl;
 import jetbrains.mps.lang.typesystem.runtime.IHelginsDescriptor;
+import TYPO3System.typesystem.TypesystemDescriptor;
 import jetbrains.mps.ide.findusages.BaseFindUsagesDescriptor;
 import java.util.Collection;
 import jetbrains.mps.generator.runtime.TemplateModule;
@@ -33,7 +34,7 @@ public class Language extends LanguageRuntime {
 
   @Override
   public IHelginsDescriptor getTypesystem() {
-    return null;
+    return new TypesystemDescriptor();
   }
 
   @Override

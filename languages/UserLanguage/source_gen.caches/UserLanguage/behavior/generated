@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dependencies version="2" modelHash="9ay67wn2ppi9qhqdnmgkjn5u5unbqyr">
+<dependencies version="2" modelHash="8hhp2vhgdh6vhb6jy1v4f0yyt8q2lex">
   <dep model="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" hash="61wht9cj3icmq9lpyigsv7597eepxrl" />
   <dep model="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" hash="5sdbpqxziyuazpb9j1p4zdk6bnvbn49" />
   <dep model="r:00000000-0000-4000-0000-011c895902cd(jetbrains.mps.baseLanguage.generator.java.main@generator)" hash="303xz1b2lyseld0axia86q3lpvucmq6" />
@@ -22,7 +22,7 @@
     <file name="Extensions_BehaviorDescriptor.java" />
     <file name="System_BehaviorDescriptor.java" />
   </common>
-  <source id="1878540589877529487" name="System_Behavior" hash="5vt1tsuvps6gs79olpwyz4u34qsb9sy">
+  <source id="1878540589877529487" name="System_Behavior" hash="-1hdjye27a4h3cio0amr9mb833svumtw">
     <dep model="r:00000000-0000-4000-0000-011c895902cd(jetbrains.mps.baseLanguage.generator.java.main@generator)" />
     <dep model="r:00000000-0000-4000-0000-011c89590303(jetbrains.mps.lang.smodel.generator.baseLanguage.template.main@generator)" />
     <dep model="r:d9f0b3b3-c216-4ce3-800c-e37636626e8c(UserLanguage.structure)" />

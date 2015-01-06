@@ -1,53 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dependenciesRoot>
-  <dependency className="TYPO3Presets.behavior.AbstractPreset_BehaviorDescriptor" file="AbstractPreset_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Override" />
-    <classNode dependClassName="java.lang.String" />
-    <classNode dependClassName="jetbrains.mps.lang.core.behavior.BaseConcept_BehaviorDescriptor" />
-    <classNode dependClassName="jetbrains.mps.lang.core.behavior.INamedConcept_Behavior" />
-    <classNode dependClassName="jetbrains.mps.lang.core.behavior.INamedConcept_BehaviorDescriptor" />
-    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
-    <classNode extendsClassName="java.lang.Cloneable" />
-    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
-  </dependency>
   <dependency className="TYPO3Presets.behavior.BehaviorAspectDescriptor" file="BehaviorAspectDescriptor.java">
-    <classNode dependClassName="TYPO3Presets.behavior.AbstractPreset_BehaviorDescriptor" />
-    <classNode dependClassName="TYPO3Presets.behavior.Extension_BehaviorDescriptor" />
+    <classNode dependClassName="TYPO3Presets.behavior.ExtensionRef_preset_BehaviorDescriptor" />
     <classNode dependClassName="TYPO3Presets.behavior.PresetRef_BehaviorDescriptor" />
     <classNode dependClassName="TYPO3Presets.behavior.Preset_BehaviorDescriptor" />
-    <classNode dependClassName="TYPO3Presets.behavior.Version_BehaviorDescriptor" />
+    <classNode dependClassName="TYPO3Presets.behavior.VersionRef_BehaviorDescriptor" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="java.util.Arrays" />
     <classNode dependClassName="jetbrains.mps.smodel.runtime.BehaviorDescriptor" />
     <classNode dependClassName="jetbrains.mps.smodel.runtime.interpreted.BehaviorAspectInterpreted" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.BehaviorAspectDescriptor" />
   </dependency>
-  <dependency className="TYPO3Presets.behavior.Extension_BehaviorDescriptor" file="Extension_BehaviorDescriptor.java">
+  <dependency className="TYPO3Presets.behavior.ExtensionRef_preset_BehaviorDescriptor" file="ExtensionRef_preset_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="jetbrains.mps.lang.core.behavior.BaseConcept_BehaviorDescriptor" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
   <dependency className="TYPO3Presets.behavior.PresetRef_BehaviorDescriptor" file="PresetRef_BehaviorDescriptor.java">
-    <classNode dependClassName="TYPO3Presets.behavior.AbstractPreset_BehaviorDescriptor" />
+    <classNode dependClassName="SoftwareSystems.behavior.AbstractPreset_BehaviorDescriptor" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
   <dependency className="TYPO3Presets.behavior.Preset_BehaviorDescriptor" file="Preset_BehaviorDescriptor.java">
-    <classNode dependClassName="TYPO3Presets.behavior.AbstractPreset_BehaviorDescriptor" />
+    <classNode dependClassName="SoftwareSystems.behavior.AbstractPreset_BehaviorDescriptor" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
-  <dependency className="TYPO3Presets.behavior.Version_BehaviorDescriptor" file="Version_BehaviorDescriptor.java">
+  <dependency className="TYPO3Presets.behavior.VersionRef_BehaviorDescriptor" file="VersionRef_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="jetbrains.mps.lang.core.behavior.BaseConcept_BehaviorDescriptor" />
-    <classNode dependClassName="jetbrains.mps.lang.core.behavior.INamedConcept_Behavior" />
-    <classNode dependClassName="jetbrains.mps.lang.core.behavior.INamedConcept_BehaviorDescriptor" />
-    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
-    <classNode extendsClassName="java.lang.Cloneable" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
 </dependenciesRoot>

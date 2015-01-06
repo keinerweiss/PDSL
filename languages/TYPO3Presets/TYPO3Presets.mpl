@@ -28,13 +28,17 @@
   <sourcePath />
   <dependencies>
     <dependency reexport="false">99ffd3f5-5f40-469a-9602-1112021e8d52(TYPO3Stock)</dependency>
+    <dependency reexport="false">2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)</dependency>
   </dependencies>
   <usedLanguages>
     <usedLanguage>99ffd3f5-5f40-469a-9602-1112021e8d52(TYPO3Stock)</usedLanguage>
+    <usedLanguage>d8f591ec-4d86-4af2-9f92-a9e93c803ffa(jetbrains.mps.lang.scopes)</usedLanguage>
   </usedLanguages>
   <usedDevKits>
     <usedDevKit>2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)</usedDevKit>
   </usedDevKits>
-  <extendedLanguages />
+  <extendedLanguages>
+    <extendedLanguage>6183b1ca-e60a-4326-903e-a8fa823cddcf(SoftwareSystems)</extendedLanguage>
+  </extendedLanguages>
 </language>
 

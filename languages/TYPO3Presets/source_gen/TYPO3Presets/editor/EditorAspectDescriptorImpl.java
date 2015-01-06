@@ -16,7 +16,7 @@ public class EditorAspectDescriptorImpl implements EditorAspectDescriptor {
   public Collection<ConceptEditor> getEditors(ConceptDescriptor descriptor) {
     switch (Arrays.binarySearch(stringSwitchCases_xbvbvu_a0a0b, descriptor.getConceptFqName())) {
       case 0:
-        return Collections.<ConceptEditor>singletonList(new Extension_Editor());
+        return Collections.<ConceptEditor>singletonList(new ExtensionRef_preset_Editor());
       default:
     }
     return Collections.<ConceptEditor>emptyList();
@@ -28,5 +28,5 @@ public class EditorAspectDescriptorImpl implements EditorAspectDescriptor {
 
 
 
-  private static String[] stringSwitchCases_xbvbvu_a0a0b = new String[]{"TYPO3Presets.structure.Extension"};
+  private static String[] stringSwitchCases_xbvbvu_a0a0b = new String[]{"TYPO3Presets.structure.ExtensionRef_preset"};
 }

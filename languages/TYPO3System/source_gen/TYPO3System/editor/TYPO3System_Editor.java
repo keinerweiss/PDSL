@@ -17,6 +17,9 @@ import jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider;
 import jetbrains.mps.openapi.editor.style.Style;
 import jetbrains.mps.editor.runtime.style.StyleImpl;
 import jetbrains.mps.editor.runtime.style.StyleAttributes;
+import jetbrains.mps.nodeEditor.MPSFonts;
+import jetbrains.mps.openapi.editor.style.StyleRegistry;
+import jetbrains.mps.nodeEditor.MPSColors;
 import jetbrains.mps.nodeEditor.cellProviders.AbstractCellListHandler;
 import jetbrains.mps.nodeEditor.cellLayout.CellLayout_Indent;
 import jetbrains.mps.lang.editor.cellProviders.RefNodeListHandler;
@@ -25,6 +28,11 @@ import jetbrains.mps.openapi.editor.cells.CellActionType;
 import jetbrains.mps.nodeEditor.cellActions.CellAction_DeleteNode;
 import jetbrains.mps.nodeEditor.cellMenu.DefaultReferenceSubstituteInfo;
 import jetbrains.mps.nodeEditor.cellMenu.DefaultChildSubstituteInfo;
+import jetbrains.mps.baseLanguage.closures.runtime.Wrappers;
+import jetbrains.mps.internal.collections.runtime.ListSequence;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
+import jetbrains.mps.internal.collections.runtime.IVisitor;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 
 public class TYPO3System_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
@@ -36,47 +44,115 @@ public class TYPO3System_Editor extends DefaultNodeEditor {
     editorCell.setCellId("Collection_52v9kn_a");
     editorCell.setBig(true);
     editorCell.addEditorCell(this.createConstant_52v9kn_a0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_52v9kn_b0(editorContext, node));
-    editorCell.addEditorCell(this.createRefCell_52v9kn_c0(editorContext, node));
+    editorCell.addEditorCell(this.createRefCell_52v9kn_b0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_52v9kn_c0(editorContext, node));
     editorCell.addEditorCell(this.createConstant_52v9kn_d0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_52v9kn_e0(editorContext, node));
-    editorCell.addEditorCell(this.createProperty_52v9kn_f0(editorContext, node));
+    editorCell.addEditorCell(this.createRefCell_52v9kn_e0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_52v9kn_f0(editorContext, node));
     editorCell.addEditorCell(this.createConstant_52v9kn_g0(editorContext, node));
     editorCell.addEditorCell(this.createConstant_52v9kn_h0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_52v9kn_i0(editorContext, node));
-    editorCell.addEditorCell(this.createRefNodeList_52v9kn_j0(editorContext, node));
+    editorCell.addEditorCell(this.createProperty_52v9kn_i0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_52v9kn_j0(editorContext, node));
     editorCell.addEditorCell(this.createConstant_52v9kn_k0(editorContext, node));
     editorCell.addEditorCell(this.createConstant_52v9kn_l0(editorContext, node));
     editorCell.addEditorCell(this.createRefNodeList_52v9kn_m0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_52v9kn_n0(editorContext, node));
+    if (renderingCondition_52v9kn_a31a(node, editorContext)) {
+      editorCell.addEditorCell(this.createComponent_52v9kn_n0(editorContext, node));
+    }
     editorCell.addEditorCell(this.createConstant_52v9kn_o0(editorContext, node));
-    editorCell.addEditorCell(this.createRefNodeList_52v9kn_p0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_52v9kn_q0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_52v9kn_p0(editorContext, node));
+    editorCell.addEditorCell(this.createRefNodeList_52v9kn_q0(editorContext, node));
     editorCell.addEditorCell(this.createConstant_52v9kn_r0(editorContext, node));
-    editorCell.addEditorCell(this.createRefNodeList_52v9kn_s0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_52v9kn_s0(editorContext, node));
+    editorCell.addEditorCell(this.createRefNodeList_52v9kn_t0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_52v9kn_u0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_52v9kn_v0(editorContext, node));
+    editorCell.addEditorCell(this.createRefNodeList_52v9kn_w0(editorContext, node));
     return editorCell;
   }
 
   private EditorCell createConstant_52v9kn_a0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "I need a system TYPO3 system");
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "I need a TYPO3 ");
     editorCell.setCellId("Constant_52v9kn_a0");
     editorCell.setDefaultText("");
     return editorCell;
   }
 
-  private EditorCell createConstant_52v9kn_b0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "base on");
-    editorCell.setCellId("Constant_52v9kn_b0");
+  private EditorCell createRefCell_52v9kn_b0(EditorContext editorContext, SNode node) {
+    CellProviderWithRole provider = new RefCellCellProvider(node, editorContext);
+    provider.setRole("Version");
+    provider.setNoTargetText("<no Version>");
+    EditorCell editorCell;
+    provider.setAuxiliaryCellProvider(new TYPO3System_Editor._Inline_52v9kn_a1a());
+    editorCell = provider.createEditorCell(editorContext);
+    if (editorCell.getRole() == null) {
+      editorCell.setReferenceCell(true);
+      editorCell.setRole("Version");
+    }
+    editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
+    SNode attributeConcept = provider.getRoleAttribute();
+    Class attributeKind = provider.getRoleAttributeClass();
+    if (attributeConcept != null) {
+      IOperationContext opContext = editorContext.getOperationContext();
+      EditorManager manager = EditorManager.getInstanceFromContext(opContext);
+      return manager.createNodeRoleAttributeCell(editorContext, attributeConcept, attributeKind, editorCell);
+    } else
+    return editorCell;
+  }
+
+  public static class _Inline_52v9kn_a1a extends InlineCellProvider {
+    public _Inline_52v9kn_a1a() {
+      super();
+    }
+
+    public EditorCell createEditorCell(EditorContext editorContext) {
+      return this.createEditorCell(editorContext, this.getSNode());
+    }
+
+    public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
+      return this.createProperty_52v9kn_a0b0(editorContext, node);
+    }
+
+    private EditorCell createProperty_52v9kn_a0b0(EditorContext editorContext, SNode node) {
+      CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
+      provider.setRole("name");
+      provider.setNoTargetText("<no name>");
+      provider.setReadOnly(true);
+      EditorCell editorCell;
+      editorCell = provider.createEditorCell(editorContext);
+      editorCell.setCellId("property_name");
+      editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
+      SNode attributeConcept = provider.getRoleAttribute();
+      Class attributeKind = provider.getRoleAttributeClass();
+      if (attributeConcept != null) {
+        IOperationContext opContext = editorContext.getOperationContext();
+        EditorManager manager = EditorManager.getInstanceFromContext(opContext);
+        return manager.createNodeRoleAttributeCell(editorContext, attributeConcept, attributeKind, editorCell);
+      } else
+      return editorCell;
+    }
+  }
+
+  private EditorCell createConstant_52v9kn_c0(EditorContext editorContext, SNode node) {
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "system ");
+    editorCell.setCellId("Constant_52v9kn_c0");
     editorCell.setDefaultText("");
     return editorCell;
   }
 
-  private EditorCell createRefCell_52v9kn_c0(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_52v9kn_d0(EditorContext editorContext, SNode node) {
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "base on");
+    editorCell.setCellId("Constant_52v9kn_d0");
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+
+  private EditorCell createRefCell_52v9kn_e0(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new RefCellCellProvider(node, editorContext);
     provider.setRole("Preset");
     provider.setNoTargetText("<no Preset>");
     EditorCell editorCell;
-    provider.setAuxiliaryCellProvider(new TYPO3System_Editor._Inline_52v9kn_a2a());
+    provider.setAuxiliaryCellProvider(new TYPO3System_Editor._Inline_52v9kn_a4a());
     editorCell = provider.createEditorCell(editorContext);
     if (editorCell.getRole() == null) {
       editorCell.setReferenceCell(true);
@@ -93,8 +169,8 @@ public class TYPO3System_Editor extends DefaultNodeEditor {
     return editorCell;
   }
 
-  public static class _Inline_52v9kn_a2a extends InlineCellProvider {
-    public _Inline_52v9kn_a2a() {
+  public static class _Inline_52v9kn_a4a extends InlineCellProvider {
+    public _Inline_52v9kn_a4a() {
       super();
     }
 
@@ -103,16 +179,16 @@ public class TYPO3System_Editor extends DefaultNodeEditor {
     }
 
     public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-      return this.createProperty_52v9kn_a0c0(editorContext, node);
+      return this.createProperty_52v9kn_a0e0(editorContext, node);
     }
 
-    private EditorCell createProperty_52v9kn_a0c0(EditorContext editorContext, SNode node) {
+    private EditorCell createProperty_52v9kn_a0e0(EditorContext editorContext, SNode node) {
       CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
       provider.setRole("name");
       provider.setNoTargetText("<no name>");
       EditorCell editorCell;
       editorCell = provider.createEditorCell(editorContext);
-      editorCell.setCellId("property_name");
+      editorCell.setCellId("property_name_1");
       editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
       SNode attributeConcept = provider.getRoleAttribute();
       Class attributeKind = provider.getRoleAttributeClass();
@@ -125,9 +201,9 @@ public class TYPO3System_Editor extends DefaultNodeEditor {
     }
   }
 
-  private EditorCell createConstant_52v9kn_d0(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_52v9kn_f0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, ".");
-    editorCell.setCellId("Constant_52v9kn_d0");
+    editorCell.setCellId("Constant_52v9kn_f0");
     Style style = new StyleImpl();
     style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, true);
     editorCell.getStyle().putAll(style);
@@ -135,20 +211,39 @@ public class TYPO3System_Editor extends DefaultNodeEditor {
     return editorCell;
   }
 
-  private EditorCell createConstant_52v9kn_e0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "The project name is \"");
-    editorCell.setCellId("Constant_52v9kn_e0");
+  private EditorCell createConstant_52v9kn_g0(EditorContext editorContext, SNode node) {
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, " ");
+    editorCell.setCellId("Constant_52v9kn_g0");
+    Style style = new StyleImpl();
+    style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, true);
+    editorCell.getStyle().putAll(style);
     editorCell.setDefaultText("");
     return editorCell;
   }
 
-  private EditorCell createProperty_52v9kn_f0(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_52v9kn_h0(EditorContext editorContext, SNode node) {
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "The project name is");
+    editorCell.setCellId("Constant_52v9kn_h0");
+    Style style = new StyleImpl();
+    style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, true);
+    editorCell.getStyle().putAll(style);
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+
+  private EditorCell createProperty_52v9kn_i0(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
     provider.setRole("name");
     provider.setNoTargetText("<no name>");
     EditorCell editorCell;
     editorCell = provider.createEditorCell(editorContext);
-    editorCell.setCellId("property_name_1");
+    editorCell.setCellId("project-name");
+    Style style = new StyleImpl();
+    style.set(StyleAttributes.FONT_SIZE, 30);
+    style.set(StyleAttributes.FONT_STYLE, MPSFonts.BOLD);
+    style.set(StyleAttributes.TEXT_COLOR, StyleRegistry.getInstance().getSimpleColor(MPSColors.LIGHT_BLUE));
+    style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, true);
+    editorCell.getStyle().putAll(style);
     editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
     SNode attributeConcept = provider.getRoleAttribute();
     Class attributeKind = provider.getRoleAttributeClass();
@@ -160,86 +255,18 @@ public class TYPO3System_Editor extends DefaultNodeEditor {
     return editorCell;
   }
 
-  private EditorCell createConstant_52v9kn_g0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "\".");
-    editorCell.setCellId("Constant_52v9kn_g0");
+  private EditorCell createConstant_52v9kn_j0(EditorContext editorContext, SNode node) {
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, " ");
+    editorCell.setCellId("Constant_52v9kn_j0");
     Style style = new StyleImpl();
     style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, true);
     editorCell.getStyle().putAll(style);
     editorCell.setDefaultText("");
     return editorCell;
-  }
-
-  private EditorCell createConstant_52v9kn_h0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "Enable the following features");
-    editorCell.setCellId("Constant_52v9kn_h0");
-    editorCell.setDefaultText("");
-    return editorCell;
-  }
-
-  private EditorCell createConstant_52v9kn_i0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, ":");
-    editorCell.setCellId("Constant_52v9kn_i0");
-    Style style = new StyleImpl();
-    style.set(StyleAttributes.PUNCTUATION_LEFT, true);
-    style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, true);
-    editorCell.getStyle().putAll(style);
-    editorCell.setDefaultText("");
-    return editorCell;
-  }
-
-  private EditorCell createRefNodeList_52v9kn_j0(EditorContext editorContext, SNode node) {
-    AbstractCellListHandler handler = new TYPO3System_Editor.FeaturesListHandler_52v9kn_j0(node, "Features", editorContext);
-    EditorCell_Collection editorCell = handler.createCells(editorContext, new CellLayout_Indent(), false);
-    editorCell.setCellId("refNodeList_Features");
-    Style style = new StyleImpl();
-    style.set(StyleAttributes.INDENT_LAYOUT_CHILDREN_NEWLINE, true);
-    style.set(StyleAttributes.INDENT_LAYOUT_INDENT, true);
-    style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, true);
-    editorCell.getStyle().putAll(style);
-    editorCell.setRole(handler.getElementRole());
-    return editorCell;
-  }
-
-  private static class FeaturesListHandler_52v9kn_j0 extends RefNodeListHandler {
-    public FeaturesListHandler_52v9kn_j0(SNode ownerNode, String childRole, EditorContext context) {
-      super(ownerNode, childRole, context, false);
-    }
-
-    public SNode createNodeToInsert(EditorContext editorContext) {
-      SNode listOwner = super.getOwner();
-      return NodeFactoryManager.createNode(listOwner, editorContext, super.getElementRole());
-    }
-
-    public EditorCell createNodeCell(EditorContext editorContext, SNode elementNode) {
-      EditorCell elementCell = super.createNodeCell(editorContext, elementNode);
-      this.installElementCellActions(this.getOwner(), elementNode, elementCell, editorContext);
-      return elementCell;
-    }
-
-    public EditorCell createEmptyCell(EditorContext editorContext) {
-      EditorCell emptyCell = null;
-      emptyCell = super.createEmptyCell(editorContext);
-      this.installElementCellActions(super.getOwner(), null, emptyCell, editorContext);
-      return emptyCell;
-    }
-
-    public void installElementCellActions(SNode listOwner, SNode elementNode, EditorCell elementCell, EditorContext editorContext) {
-      if (elementCell.getUserObject(AbstractCellListHandler.ELEMENT_CELL_ACTIONS_SET) == null) {
-        elementCell.putUserObject(AbstractCellListHandler.ELEMENT_CELL_ACTIONS_SET, AbstractCellListHandler.ELEMENT_CELL_ACTIONS_SET);
-        if (elementNode != null) {
-          elementCell.setAction(CellActionType.DELETE, new CellAction_DeleteNode(elementNode));
-          elementCell.setAction(CellActionType.BACKSPACE, new CellAction_DeleteNode(elementNode));
-        }
-        if (elementCell.getSubstituteInfo() == null || elementCell.getSubstituteInfo() instanceof DefaultReferenceSubstituteInfo) {
-          elementCell.setSubstituteInfo(new DefaultChildSubstituteInfo(listOwner, elementNode, super.getLinkDeclaration(), editorContext));
-        }
-      }
-    }
   }
 
   private EditorCell createConstant_52v9kn_k0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "Install and enable the following extensions");
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "Enable the following features");
     editorCell.setCellId("Constant_52v9kn_k0");
     editorCell.setDefaultText("");
     return editorCell;
@@ -257,18 +284,20 @@ public class TYPO3System_Editor extends DefaultNodeEditor {
   }
 
   private EditorCell createRefNodeList_52v9kn_m0(EditorContext editorContext, SNode node) {
-    AbstractCellListHandler handler = new TYPO3System_Editor.ExtensionsListHandler_52v9kn_m0(node, "Extensions", editorContext);
+    AbstractCellListHandler handler = new TYPO3System_Editor.FeaturesListHandler_52v9kn_m0(node, "Features", editorContext);
     EditorCell_Collection editorCell = handler.createCells(editorContext, new CellLayout_Indent(), false);
-    editorCell.setCellId("refNodeList_Extensions");
+    editorCell.setCellId("refNodeList_Features");
     Style style = new StyleImpl();
+    style.set(StyleAttributes.INDENT_LAYOUT_CHILDREN_NEWLINE, true);
+    style.set(StyleAttributes.INDENT_LAYOUT_INDENT, true);
     style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, true);
     editorCell.getStyle().putAll(style);
     editorCell.setRole(handler.getElementRole());
     return editorCell;
   }
 
-  private static class ExtensionsListHandler_52v9kn_m0 extends RefNodeListHandler {
-    public ExtensionsListHandler_52v9kn_m0(SNode ownerNode, String childRole, EditorContext context) {
+  private static class FeaturesListHandler_52v9kn_m0 extends RefNodeListHandler {
+    public FeaturesListHandler_52v9kn_m0(SNode ownerNode, String childRole, EditorContext context) {
       super(ownerNode, childRole, context, false);
     }
 
@@ -304,16 +333,36 @@ public class TYPO3System_Editor extends DefaultNodeEditor {
     }
   }
 
-  private EditorCell createConstant_52v9kn_n0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "We need the following user roles");
-    editorCell.setCellId("Constant_52v9kn_n0");
+  private EditorCell createComponent_52v9kn_n0(EditorContext editorContext, SNode node) {
+    EditorCell editorCell = editorContext.getCellFactory().createEditorComponentCell(node, "TYPO3System.editor.TenantList");
+    Style style = new StyleImpl();
+    style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, true);
+    editorCell.getStyle().putAll(style);
+    return editorCell;
+  }
+
+  private static boolean renderingCondition_52v9kn_a31a(SNode node, EditorContext editorContext) {
+    final Wrappers._boolean show = new Wrappers._boolean(false);
+    ListSequence.fromList(SLinkOperations.getTargets(node, "Features", true)).visitAll(new IVisitor<SNode>() {
+      public void visit(SNode it) {
+        if (SLinkOperations.getTarget(it, "feature", false) != null && SPropertyOperations.getString(SLinkOperations.getTarget(it, "feature", false), "id").equals("multitenant")) {
+          show.value = true;
+        }
+      }
+    });
+    return show.value;
+  }
+
+  private EditorCell createConstant_52v9kn_o0(EditorContext editorContext, SNode node) {
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "Install and enable the following extensions");
+    editorCell.setCellId("Constant_52v9kn_o0");
     editorCell.setDefaultText("");
     return editorCell;
   }
 
-  private EditorCell createConstant_52v9kn_o0(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_52v9kn_p0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, ":");
-    editorCell.setCellId("Constant_52v9kn_o0");
+    editorCell.setCellId("Constant_52v9kn_p0");
     Style style = new StyleImpl();
     style.set(StyleAttributes.PUNCTUATION_LEFT, true);
     style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, true);
@@ -322,8 +371,76 @@ public class TYPO3System_Editor extends DefaultNodeEditor {
     return editorCell;
   }
 
-  private EditorCell createRefNodeList_52v9kn_p0(EditorContext editorContext, SNode node) {
-    AbstractCellListHandler handler = new TYPO3System_Editor.RolesListHandler_52v9kn_p0(node, "Roles", editorContext);
+  private EditorCell createRefNodeList_52v9kn_q0(EditorContext editorContext, SNode node) {
+    AbstractCellListHandler handler = new TYPO3System_Editor.ExtensionsListHandler_52v9kn_q0(node, "Extensions", editorContext);
+    EditorCell_Collection editorCell = handler.createCells(editorContext, new CellLayout_Indent(), false);
+    editorCell.setCellId("refNodeList_Extensions");
+    Style style = new StyleImpl();
+    style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, true);
+    style.set(StyleAttributes.INDENT_LAYOUT_INDENT, true);
+    style.set(StyleAttributes.INDENT_LAYOUT_CHILDREN_NEWLINE, true);
+    editorCell.getStyle().putAll(style);
+    editorCell.setRole(handler.getElementRole());
+    return editorCell;
+  }
+
+  private static class ExtensionsListHandler_52v9kn_q0 extends RefNodeListHandler {
+    public ExtensionsListHandler_52v9kn_q0(SNode ownerNode, String childRole, EditorContext context) {
+      super(ownerNode, childRole, context, false);
+    }
+
+    public SNode createNodeToInsert(EditorContext editorContext) {
+      SNode listOwner = super.getOwner();
+      return NodeFactoryManager.createNode(listOwner, editorContext, super.getElementRole());
+    }
+
+    public EditorCell createNodeCell(EditorContext editorContext, SNode elementNode) {
+      EditorCell elementCell = super.createNodeCell(editorContext, elementNode);
+      this.installElementCellActions(this.getOwner(), elementNode, elementCell, editorContext);
+      return elementCell;
+    }
+
+    public EditorCell createEmptyCell(EditorContext editorContext) {
+      EditorCell emptyCell = null;
+      emptyCell = super.createEmptyCell(editorContext);
+      this.installElementCellActions(super.getOwner(), null, emptyCell, editorContext);
+      return emptyCell;
+    }
+
+    public void installElementCellActions(SNode listOwner, SNode elementNode, EditorCell elementCell, EditorContext editorContext) {
+      if (elementCell.getUserObject(AbstractCellListHandler.ELEMENT_CELL_ACTIONS_SET) == null) {
+        elementCell.putUserObject(AbstractCellListHandler.ELEMENT_CELL_ACTIONS_SET, AbstractCellListHandler.ELEMENT_CELL_ACTIONS_SET);
+        if (elementNode != null) {
+          elementCell.setAction(CellActionType.DELETE, new CellAction_DeleteNode(elementNode));
+          elementCell.setAction(CellActionType.BACKSPACE, new CellAction_DeleteNode(elementNode));
+        }
+        if (elementCell.getSubstituteInfo() == null || elementCell.getSubstituteInfo() instanceof DefaultReferenceSubstituteInfo) {
+          elementCell.setSubstituteInfo(new DefaultChildSubstituteInfo(listOwner, elementNode, super.getLinkDeclaration(), editorContext));
+        }
+      }
+    }
+  }
+
+  private EditorCell createConstant_52v9kn_r0(EditorContext editorContext, SNode node) {
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "We need the following user roles");
+    editorCell.setCellId("Constant_52v9kn_r0");
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+
+  private EditorCell createConstant_52v9kn_s0(EditorContext editorContext, SNode node) {
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, ":");
+    editorCell.setCellId("Constant_52v9kn_s0");
+    Style style = new StyleImpl();
+    style.set(StyleAttributes.PUNCTUATION_LEFT, true);
+    style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, true);
+    editorCell.getStyle().putAll(style);
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+
+  private EditorCell createRefNodeList_52v9kn_t0(EditorContext editorContext, SNode node) {
+    AbstractCellListHandler handler = new TYPO3System_Editor.RolesListHandler_52v9kn_t0(node, "Roles", editorContext);
     EditorCell_Collection editorCell = handler.createCells(editorContext, new CellLayout_Indent(), false);
     editorCell.setCellId("refNodeList_Roles");
     Style style = new StyleImpl();
@@ -335,8 +452,8 @@ public class TYPO3System_Editor extends DefaultNodeEditor {
     return editorCell;
   }
 
-  private static class RolesListHandler_52v9kn_p0 extends RefNodeListHandler {
-    public RolesListHandler_52v9kn_p0(SNode ownerNode, String childRole, EditorContext context) {
+  private static class RolesListHandler_52v9kn_t0 extends RefNodeListHandler {
+    public RolesListHandler_52v9kn_t0(SNode ownerNode, String childRole, EditorContext context) {
       super(ownerNode, childRole, context, false);
     }
 
@@ -372,16 +489,16 @@ public class TYPO3System_Editor extends DefaultNodeEditor {
     }
   }
 
-  private EditorCell createConstant_52v9kn_q0(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_52v9kn_u0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "Create the following users");
-    editorCell.setCellId("Constant_52v9kn_q0");
+    editorCell.setCellId("Constant_52v9kn_u0");
     editorCell.setDefaultText("");
     return editorCell;
   }
 
-  private EditorCell createConstant_52v9kn_r0(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_52v9kn_v0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, ":");
-    editorCell.setCellId("Constant_52v9kn_r0");
+    editorCell.setCellId("Constant_52v9kn_v0");
     Style style = new StyleImpl();
     style.set(StyleAttributes.PUNCTUATION_LEFT, true);
     style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, true);
@@ -390,8 +507,8 @@ public class TYPO3System_Editor extends DefaultNodeEditor {
     return editorCell;
   }
 
-  private EditorCell createRefNodeList_52v9kn_s0(EditorContext editorContext, SNode node) {
-    AbstractCellListHandler handler = new TYPO3System_Editor.UsersListHandler_52v9kn_s0(node, "Users", editorContext);
+  private EditorCell createRefNodeList_52v9kn_w0(EditorContext editorContext, SNode node) {
+    AbstractCellListHandler handler = new TYPO3System_Editor.UsersListHandler_52v9kn_w0(node, "Users", editorContext);
     EditorCell_Collection editorCell = handler.createCells(editorContext, new CellLayout_Indent(), false);
     editorCell.setCellId("refNodeList_Users");
     Style style = new StyleImpl();
@@ -403,8 +520,8 @@ public class TYPO3System_Editor extends DefaultNodeEditor {
     return editorCell;
   }
 
-  private static class UsersListHandler_52v9kn_s0 extends RefNodeListHandler {
-    public UsersListHandler_52v9kn_s0(SNode ownerNode, String childRole, EditorContext context) {
+  private static class UsersListHandler_52v9kn_w0 extends RefNodeListHandler {
+    public UsersListHandler_52v9kn_w0(SNode ownerNode, String childRole, EditorContext context) {
       super(ownerNode, childRole, context, false);
     }
 

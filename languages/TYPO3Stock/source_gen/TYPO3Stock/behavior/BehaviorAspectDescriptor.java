@@ -14,16 +14,26 @@ public class BehaviorAspectDescriptor implements jetbrains.mps.smodel.runtime.Be
     switch (Arrays.binarySearch(stringSwitchCases_846f5o_a0a0b, fqName)) {
       case 0:
         return new Extension_BehaviorDescriptor();
-      case 3:
+      case 6:
         return new Stock_BehaviorDescriptor();
-      case 1:
-        return new Feature_BehaviorDescriptor();
       case 2:
+        return new Feature_BehaviorDescriptor();
+      case 4:
         return new Purpose_BehaviorDescriptor();
+      case 7:
+        return new Version_BehaviorDescriptor();
+      case 3:
+        return new FeatureRef_BehaviorDescriptor();
+      case 5:
+        return new PurposeRef_BehaviorDescriptor();
+      case 8:
+        return new VersionRef_BehaviorDescriptor();
+      case 1:
+        return new ExtensionRef_stock_BehaviorDescriptor();
       default:
         return BehaviorAspectInterpreted.getInstance().getDescriptor(fqName);
     }
   }
 
-  private static String[] stringSwitchCases_846f5o_a0a0b = new String[]{"TYPO3Stock.structure.Extension", "TYPO3Stock.structure.Feature", "TYPO3Stock.structure.Purpose", "TYPO3Stock.structure.Stock"};
+  private static String[] stringSwitchCases_846f5o_a0a0b = new String[]{"TYPO3Stock.structure.Extension", "TYPO3Stock.structure.ExtensionRef_stock", "TYPO3Stock.structure.Feature", "TYPO3Stock.structure.FeatureRef", "TYPO3Stock.structure.Purpose", "TYPO3Stock.structure.PurposeRef", "TYPO3Stock.structure.Stock", "TYPO3Stock.structure.Version", "TYPO3Stock.structure.VersionRef"};
 }

@@ -46,5 +46,37 @@
     </dependencies>
     <rename id="k5kc.3598894899136489747" type="CONCEPT" from="Extension" to="ExtensionRef" />
   </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="k5kc" modelUID="r:b7a865c5-34fe-4061-a116-63a7e68a4f2f(TYPO3Presets.structure)" version="4" />
+      <model index="vhjm" modelUID="r:cc253de2-9198-4f52-9f3f-23596c670e7b(SoftwareSystems.structure)" version="-1" />
+    </dependencies>
+    <move id="k5kc.3598894899136216469" to="vhjm.4851523155650295221" />
+    <move id="k5kc.3598894899136216513" to="vhjm.4851523155650295222" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="k5kc" modelUID="r:b7a865c5-34fe-4061-a116-63a7e68a4f2f(TYPO3Presets.structure)" version="5" />
+    </dependencies>
+    <rename id="k5kc.3598894899136493544" type="CONCEPT" from="Extension" to="ExtensionRef" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="k5kc" modelUID="r:b7a865c5-34fe-4061-a116-63a7e68a4f2f(TYPO3Presets.structure)" version="6" />
+    </dependencies>
+    <rename id="k5kc.4446906832555669752" type="CONCEPT" from="Version" to="VersionRef" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="k5kc" modelUID="r:b7a865c5-34fe-4061-a116-63a7e68a4f2f(TYPO3Presets.structure)" version="7" />
+    </dependencies>
+    <rename id="k5kc.3598894899136493544" type="CONCEPT" from="ExtensionRef" to="ExtensionRef__" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="k5kc" modelUID="r:b7a865c5-34fe-4061-a116-63a7e68a4f2f(TYPO3Presets.structure)" version="8" />
+    </dependencies>
+    <rename id="k5kc.3598894899136493544" type="CONCEPT" from="ExtensionRef__" to="ExtensionRef_preset" />
+  </StructureModification>
 </history>
 

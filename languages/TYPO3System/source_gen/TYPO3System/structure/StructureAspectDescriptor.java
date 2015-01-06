@@ -16,21 +16,23 @@ public class StructureAspectDescriptor implements jetbrains.mps.smodel.runtime.S
       case 0:
         return new ConceptDescriptorBuilder("TYPO3System.structure.AbstractRole").super_("jetbrains.mps.lang.core.structure.BaseConcept").parents("jetbrains.mps.lang.core.structure.BaseConcept", "jetbrains.mps.lang.core.structure.INamedConcept").create();
       case 1:
-        return new ConceptDescriptorBuilder("TYPO3System.structure.Extension").super_("jetbrains.mps.lang.core.structure.BaseConcept").parents("jetbrains.mps.lang.core.structure.BaseConcept").references("Extension").create();
+        return new ConceptDescriptorBuilder("TYPO3System.structure.ExtensionRef_system").super_("jetbrains.mps.lang.core.structure.BaseConcept").parents("jetbrains.mps.lang.core.structure.BaseConcept").references("Extension").create();
       case 2:
-        return new ConceptDescriptorBuilder("TYPO3System.structure.Feature").super_("jetbrains.mps.lang.core.structure.BaseConcept").parents("jetbrains.mps.lang.core.structure.BaseConcept").references("feature").alias("feature", "").create();
+        return new ConceptDescriptorBuilder("TYPO3System.structure.Feature_system").super_("jetbrains.mps.lang.core.structure.BaseConcept").parents("jetbrains.mps.lang.core.structure.BaseConcept").references("feature").alias("feature", "").create();
       case 3:
         return new ConceptDescriptorBuilder("TYPO3System.structure.Role").super_("TYPO3System.structure.AbstractRole").parents("TYPO3System.structure.AbstractRole").alias("role", "").create();
       case 4:
         return new ConceptDescriptorBuilder("TYPO3System.structure.RoleRef").super_("TYPO3System.structure.AbstractRole").parents("TYPO3System.structure.AbstractRole").references("role").alias("role ref", "").create();
       case 5:
-        return new ConceptDescriptorBuilder("TYPO3System.structure.TYPO3System").super_("SoftwareSystems.structure.SoftwareSystem").parents("SoftwareSystems.structure.SoftwareSystem").references("Preset").children(new String[]{"Features", "Users", "Roles", "Extensions"}, new boolean[]{true, true, true, true}).create();
+        return new ConceptDescriptorBuilder("TYPO3System.structure.TYPO3System").super_("SoftwareSystems.structure.SoftwareSystem").parents("SoftwareSystems.structure.SoftwareSystem").references("Version").children(new String[]{"Features", "Tenants", "Users", "Roles", "Extensions"}, new boolean[]{true, true, true, true, true}).create();
       case 6:
-        return new ConceptDescriptorBuilder("TYPO3System.structure.User").super_("jetbrains.mps.lang.core.structure.BaseConcept").parents("jetbrains.mps.lang.core.structure.BaseConcept", "jetbrains.mps.lang.core.structure.INamedConcept").properties("email", "firstname", "lastname").references("role").alias("User", "").create();
+        return new ConceptDescriptorBuilder("TYPO3System.structure.Tenant").super_("jetbrains.mps.lang.core.structure.BaseConcept").parents("jetbrains.mps.lang.core.structure.BaseConcept", "jetbrains.mps.lang.core.structure.INamedConcept").alias("tenant", "").create();
+      case 7:
+        return new ConceptDescriptorBuilder("TYPO3System.structure.User").super_("jetbrains.mps.lang.core.structure.BaseConcept").parents("jetbrains.mps.lang.core.structure.BaseConcept", "jetbrains.mps.lang.core.structure.INamedConcept", "jetbrains.mps.lang.core.structure.ScopeProvider").properties("email", "firstname", "lastname").references("role").alias("User", "").create();
       default:
         return StructureAspectInterpreted.getInstance().getDescriptor(conceptFqName);
     }
   }
 
-  private static String[] stringSwitchCases_1htk8d_a0a0b = new String[]{"TYPO3System.structure.AbstractRole", "TYPO3System.structure.Extension", "TYPO3System.structure.Feature", "TYPO3System.structure.Role", "TYPO3System.structure.RoleRef", "TYPO3System.structure.TYPO3System", "TYPO3System.structure.User"};
+  private static String[] stringSwitchCases_1htk8d_a0a0b = new String[]{"TYPO3System.structure.AbstractRole", "TYPO3System.structure.ExtensionRef_system", "TYPO3System.structure.Feature_system", "TYPO3System.structure.Role", "TYPO3System.structure.RoleRef", "TYPO3System.structure.TYPO3System", "TYPO3System.structure.Tenant", "TYPO3System.structure.User"};
 }

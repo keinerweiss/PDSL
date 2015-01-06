@@ -22,5 +22,65 @@
     <move id="k5kc.4446906832555669774" to="xkfh.3598894899136486588" />
     <move id="k5kc.4446906832555667616" to="xkfh.3598894899136486583" />
   </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="xkfh" modelUID="r:a43fb49c-b6c0-4d4f-851b-48276855d059(TYPO3Stock.structure)" version="0" />
+    </dependencies>
+    <rename id="xkfh.25423937595135198" type="REFERENCE" from="incompatibleWith" to="incompatibleExtensions" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="xkfh" modelUID="r:a43fb49c-b6c0-4d4f-851b-48276855d059(TYPO3Stock.structure)" version="1" />
+    </dependencies>
+    <rename id="xkfh.25423937595136851" type="CONCEPT" from="SystemVersion" to="TYPO3Version" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="xkfh" modelUID="r:a43fb49c-b6c0-4d4f-851b-48276855d059(TYPO3Stock.structure)" version="2" />
+    </dependencies>
+    <rename id="xkfh.25423937595138608" type="REFERENCE" from="incom" to="incompatibleTYPO3Versions" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="xkfh" modelUID="r:a43fb49c-b6c0-4d4f-851b-48276855d059(TYPO3Stock.structure)" version="3" />
+    </dependencies>
+    <rename id="xkfh.25423937595158285" type="CONCEPT" from="FeatureReference" to="FeatureRef" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="xkfh" modelUID="r:a43fb49c-b6c0-4d4f-851b-48276855d059(TYPO3Stock.structure)" version="4" />
+    </dependencies>
+    <rename id="xkfh.25423937595211819" type="CONCEPT" from="PurposeReference" to="PurposeRef" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="xkfh" modelUID="r:a43fb49c-b6c0-4d4f-851b-48276855d059(TYPO3Stock.structure)" version="5" />
+    </dependencies>
+    <rename id="xkfh.25423937595136851" type="CONCEPT" from="TYPO3Version" to="Version" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="xkfh" modelUID="r:a43fb49c-b6c0-4d4f-851b-48276855d059(TYPO3Stock.structure)" version="6" />
+    </dependencies>
+    <rename id="xkfh.6611318383329473097" type="CHILD" from="featureRef" to="incompatibleExtensions" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="xkfh" modelUID="r:a43fb49c-b6c0-4d4f-851b-48276855d059(TYPO3Stock.structure)" version="7" />
+    </dependencies>
+    <rename id="xkfh.6611318383329477863" type="CONCEPT" from="VersionReference" to="VersionRef" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="xkfh" modelUID="r:a43fb49c-b6c0-4d4f-851b-48276855d059(TYPO3Stock.structure)" version="8" />
+    </dependencies>
+    <rename id="xkfh.6611318383329531274" type="CONCEPT" from="ExtensionReference" to="ExtensionRef" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="xkfh" modelUID="r:a43fb49c-b6c0-4d4f-851b-48276855d059(TYPO3Stock.structure)" version="9" />
+    </dependencies>
+    <rename id="xkfh.6611318383329531274" type="CONCEPT" from="ExtensionRef" to="ExtensionRef_stock" />
+  </StructureModification>
 </history>
 

@@ -1,20 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debugInfo>
   <unitInfo fileName="AbstractRole_BehaviorDescriptor.java" startLine="10" startPosition="0" endLine="23" endPosition="0" unitName="TYPO3System.behavior.AbstractRole_BehaviorDescriptor" />
-  <unitInfo fileName="BehaviorAspectDescriptor.java" startLine="9" startPosition="0" endLine="36" endPosition="0" unitName="TYPO3System.behavior.BehaviorAspectDescriptor" />
-  <unitInfo fileName="Extension_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="TYPO3System.behavior.Extension_BehaviorDescriptor" />
-  <unitInfo fileName="Feature_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="TYPO3System.behavior.Feature_BehaviorDescriptor" />
+  <unitInfo fileName="BehaviorAspectDescriptor.java" startLine="9" startPosition="0" endLine="38" endPosition="0" unitName="TYPO3System.behavior.BehaviorAspectDescriptor" />
+  <unitInfo fileName="ExtensionRef_system_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="TYPO3System.behavior.ExtensionRef_system_BehaviorDescriptor" />
+  <unitInfo fileName="Feature_system_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="TYPO3System.behavior.Feature_system_BehaviorDescriptor" />
   <unitInfo fileName="RoleRef_BehaviorDescriptor.java" startLine="6" startPosition="0" endLine="15" endPosition="0" unitName="TYPO3System.behavior.RoleRef_BehaviorDescriptor" />
   <unitInfo fileName="Role_BehaviorDescriptor.java" startLine="6" startPosition="0" endLine="15" endPosition="0" unitName="TYPO3System.behavior.Role_BehaviorDescriptor" />
   <unitInfo fileName="TYPO3System_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="TYPO3System.behavior.TYPO3System_BehaviorDescriptor" />
+  <unitInfo fileName="Tenant_BehaviorDescriptor.java" startLine="10" startPosition="0" endLine="23" endPosition="0" unitName="TYPO3System.behavior.Tenant_BehaviorDescriptor" />
   <unitInfo fileName="User_BehaviorDescriptor.java" startLine="13" startPosition="0" endLine="34" endPosition="0" unitName="TYPO3System.behavior.User_BehaviorDescriptor" />
   <root nodeRef="r:caaeabca-ad8a-4722-9874-b5bb603d874c(TYPO3System.behavior)/3598894899137207432">
-    <nodeInfo nodeId="3598894899137207432" fileName="User_Behavior.java" startLine="8" startPosition="0" endLine="10" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
-    <scopeInfo nodeId="3598894899137207585" fileName="User_Behavior.java" startLine="8" startPosition="43" endLine="8" endPosition="43" />
-    <scopeInfo nodeId="3598894899137207432" fileName="User_Behavior.java" startLine="8" startPosition="0" endLine="10" endPosition="0">
+    <nodeInfo nodeId="3598894899137208651" fileName="User_Behavior.java" startLine="13" startPosition="101" endLine="14" endPosition="183" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="3598894899137207432" fileName="User_Behavior.java" startLine="10" startPosition="0" endLine="12" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+    <nodeInfo nodeId="3598894899137207432" fileName="User_Behavior.java" startLine="13" startPosition="0" endLine="16" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="virtual_getScope_3734116213129936182#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/scope/Scope;" />
+    <scopeInfo nodeId="3598894899137207585" fileName="User_Behavior.java" startLine="10" startPosition="43" endLine="10" endPosition="43" />
+    <scopeInfo nodeId="3598894899137208640" fileName="User_Behavior.java" startLine="13" startPosition="101" endLine="14" endPosition="183" />
+    <scopeInfo nodeId="3598894899137207432" fileName="User_Behavior.java" startLine="10" startPosition="0" endLine="12" endPosition="0">
       <varInfo nodeId="3598894899137207432" varName="thisNode" />
     </scopeInfo>
-    <unitInfo nodeId="3598894899137207432" fileName="User_Behavior.java" startLine="7" startPosition="0" endLine="11" endPosition="0" unitName="TYPO3System.behavior.User_Behavior" />
+    <scopeInfo nodeId="3598894899137207432" fileName="User_Behavior.java" startLine="13" startPosition="0" endLine="16" endPosition="0">
+      <varInfo nodeId="3598894899137208643" varName="child" />
+      <varInfo nodeId="3598894899137208641" varName="kind" />
+      <varInfo nodeId="3598894899137207432" varName="thisNode" />
+    </scopeInfo>
+    <unitInfo nodeId="3598894899137207432" fileName="User_Behavior.java" startLine="9" startPosition="0" endLine="17" endPosition="0" unitName="TYPO3System.behavior.User_Behavior" />
   </root>
 </debugInfo>
 

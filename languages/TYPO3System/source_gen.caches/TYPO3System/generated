@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dependencies version="2" modelHash="68ti6xhns7vfxleiobwk06y35ua8fwo">
+<dependencies version="2" modelHash="-d9jip0hw2j81oiuzhixrdldtk8cuab">
   <dep model="r:00000000-0000-4000-0000-011c895902cd(jetbrains.mps.baseLanguage.generator.java.main@generator)" hash="303xz1b2lyseld0axia86q3lpvucmq6" />
-  <dep model="r:9494b9cf-45e4-43ae-aeca-62002681ce58(TYPO3System.editor)" hash="cgu23exi8mkbwjib0dk267aqt60dird" />
-  <dep model="r:9811afae-d085-4269-a724-76a259cea2b2(TYPO3System.typesystem)" hash="e7xe8yhe1avfcge8bpo8zb8ppmj9eax" />
+  <dep model="r:9494b9cf-45e4-43ae-aeca-62002681ce58(TYPO3System.editor)" hash="-4roa8q2794iotyocofx8acjlc8y0cyq" />
+  <dep model="r:9811afae-d085-4269-a724-76a259cea2b2(TYPO3System.typesystem)" hash="2mtvmt12h6r9iyem48xbg54bapmvmvz" />
   <dep model="r:b4d7d620-6723-4aa2-856b-118497e84e9e(jetbrains.mps.baseLanguage.generator.java.strings@generator)" hash="b4ewbuz42qcbg1awca5bacgi0vopxqt" />
   <dep model="r:f04c1476-2f91-4f59-be13-c8e009abebee(jetbrains.mps.baseLanguageInternal.generator.template.main@generator)" hash="a8elw7fctzg6sg8fe36u9gzu42axhdb" />
   <common dependsOnNodes="true">

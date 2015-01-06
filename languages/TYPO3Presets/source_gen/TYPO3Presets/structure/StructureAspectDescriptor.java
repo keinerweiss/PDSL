@@ -14,19 +14,17 @@ public class StructureAspectDescriptor implements jetbrains.mps.smodel.runtime.S
   public ConceptDescriptor getDescriptor(String conceptFqName) {
     switch (Arrays.binarySearch(stringSwitchCases_1htk8d_a0a0b, conceptFqName)) {
       case 0:
-        return new ConceptDescriptorBuilder("TYPO3Presets.structure.AbstractPreset").super_("jetbrains.mps.lang.core.structure.BaseConcept").parents("jetbrains.mps.lang.core.structure.BaseConcept", "jetbrains.mps.lang.core.structure.INamedConcept").create();
+        return new ConceptDescriptorBuilder("TYPO3Presets.structure.ExtensionRef_preset").super_("jetbrains.mps.lang.core.structure.BaseConcept").parents("jetbrains.mps.lang.core.structure.BaseConcept").references("Extension").create();
       case 1:
-        return new ConceptDescriptorBuilder("TYPO3Presets.structure.Extension").super_("jetbrains.mps.lang.core.structure.BaseConcept").parents("jetbrains.mps.lang.core.structure.BaseConcept").references("Extension").create();
+        return new ConceptDescriptorBuilder("TYPO3Presets.structure.Preset").super_("SoftwareSystems.structure.AbstractPreset").parents("SoftwareSystems.structure.AbstractPreset").references("Stock").children(new String[]{"AvailableFeatures", "AvailableVersions", "AvailableExtensions", "AvailablePurposes"}, new boolean[]{true, true, true, true}).alias("Preset", "").create();
       case 2:
-        return new ConceptDescriptorBuilder("TYPO3Presets.structure.Preset").super_("TYPO3Presets.structure.AbstractPreset").parents("TYPO3Presets.structure.AbstractPreset").references("Stock").children(new String[]{"AvailableFeatures", "AvailableVersions", "AvailableExtensions", "AvailablePurposes"}, new boolean[]{true, true, true, true}).alias("Preset", "").create();
+        return new ConceptDescriptorBuilder("TYPO3Presets.structure.PresetRef").super_("SoftwareSystems.structure.AbstractPreset").parents("SoftwareSystems.structure.AbstractPreset").references("preset").alias("preset ref", "").create();
       case 3:
-        return new ConceptDescriptorBuilder("TYPO3Presets.structure.PresetRef").super_("TYPO3Presets.structure.AbstractPreset").parents("TYPO3Presets.structure.AbstractPreset").references("preset").alias("preset ref", "").create();
-      case 4:
-        return new ConceptDescriptorBuilder("TYPO3Presets.structure.Version").super_("jetbrains.mps.lang.core.structure.BaseConcept").parents("jetbrains.mps.lang.core.structure.BaseConcept", "jetbrains.mps.lang.core.structure.INamedConcept").properties("title").alias("version", "").create();
+        return new ConceptDescriptorBuilder("TYPO3Presets.structure.VersionRef").super_("jetbrains.mps.lang.core.structure.BaseConcept").parents("jetbrains.mps.lang.core.structure.BaseConcept").references("version").create();
       default:
         return StructureAspectInterpreted.getInstance().getDescriptor(conceptFqName);
     }
   }
 
-  private static String[] stringSwitchCases_1htk8d_a0a0b = new String[]{"TYPO3Presets.structure.AbstractPreset", "TYPO3Presets.structure.Extension", "TYPO3Presets.structure.Preset", "TYPO3Presets.structure.PresetRef", "TYPO3Presets.structure.Version"};
+  private static String[] stringSwitchCases_1htk8d_a0a0b = new String[]{"TYPO3Presets.structure.ExtensionRef_preset", "TYPO3Presets.structure.Preset", "TYPO3Presets.structure.PresetRef", "TYPO3Presets.structure.VersionRef"};
 }
