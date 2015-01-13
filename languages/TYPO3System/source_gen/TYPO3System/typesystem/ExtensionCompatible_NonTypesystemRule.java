@@ -30,7 +30,7 @@ public class ExtensionCompatible_NonTypesystemRule extends AbstractNonTypesystem
     SNode system = SNodeOperations.getAncestor(extensionRef_stock, "TYPO3System.structure.TYPO3System", false, false);
     final Wrappers._T<SNode> errorExt = new Wrappers._T<SNode>(null);
 
-    extensions = ListSequence.fromList(SNodeOperations.getDescendants(system, "TYPO3Stock.structure.ExtensionRef_stock", false, new String[]{})).where(new IWhereFilter<SNode>() {
+    extensions = ListSequence.fromList(SNodeOperations.getDescendants(system, "TYPO3Stock.structure.ExtensionRef", false, new String[]{})).where(new IWhereFilter<SNode>() {
       public boolean accept(final SNode it) {
         ListSequence.fromList(SLinkOperations.getTargets(SLinkOperations.getTarget(it, "extension", false), "incompatibleExtensions", true)).visitAll(new IVisitor<SNode>() {
           public void visit(SNode it2) {
@@ -54,7 +54,7 @@ public class ExtensionCompatible_NonTypesystemRule extends AbstractNonTypesystem
   }
 
   public String getApplicableConceptFQName() {
-    return "TYPO3Stock.structure.ExtensionRef_stock";
+    return "TYPO3Stock.structure.ExtensionRef";
   }
 
   public IsApplicableStatus isApplicableAndPattern(SNode argument) {

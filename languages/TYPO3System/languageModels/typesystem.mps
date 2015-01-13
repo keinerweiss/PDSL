@@ -5,7 +5,7 @@
   <language namespace="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1(jetbrains.mps.lang.constraints)" />
   <devkit namespace="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   <import index="guq0" modelUID="r:424c65cf-f1d2-449a-a330-4dcce5269a11(TYPO3System.structure)" version="9" />
-  <import index="xkfh" modelUID="r:a43fb49c-b6c0-4d4f-851b-48276855d059(TYPO3Stock.structure)" version="10" />
+  <import index="xkfh" modelUID="r:a43fb49c-b6c0-4d4f-851b-48276855d059(TYPO3Stock.structure)" version="11" />
   <import index="k7g3" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" version="-1" />
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="5" implicit="yes" />
   <import index="tpd4" modelUID="r:00000000-0000-4000-0000-011c895902b4(jetbrains.mps.lang.typesystem.structure)" version="7" implicit="yes" />
@@ -366,13 +366,13 @@
           <property name="name" nameId="tpck.1169194664001" value="extensions" />
           <node role="type" roleId="tpee.5680397130376446158" type="tp2q.SequenceType" typeId="tp2q.1151689724996" id="6611318383329449132" nodeInfo="in">
             <node role="elementType" roleId="tp2q.1151689745422" type="tp25.SNodeType" typeId="tp25.1138055754698" id="6611318383329449133" nodeInfo="in">
-              <link role="concept" roleId="tp25.1138405853777" targetNodeId="xkfh.6611318383329531274" resolveInfo="ExtensionRef_stock" />
+              <link role="concept" roleId="tp25.1138405853777" targetNodeId="xkfh.6611318383329531274" resolveInfo="ExtensionRef" />
             </node>
           </node>
           <node role="initializer" roleId="tpee.1068431790190" type="tpee.GenericNewExpression" typeId="tpee.1145552977093" id="6611318383329449134" nodeInfo="nn">
             <node role="creator" roleId="tpee.1145553007750" type="tp2q.SequenceCreator" typeId="tp2q.1224414427926" id="6611318383329449135" nodeInfo="nn">
               <node role="elementType" roleId="tp2q.1224414456414" type="tp25.SNodeType" typeId="tp25.1138055754698" id="6611318383329449136" nodeInfo="in">
-                <link role="concept" roleId="tp25.1138405853777" targetNodeId="xkfh.6611318383329531274" resolveInfo="ExtensionRef_stock" />
+                <link role="concept" roleId="tp25.1138405853777" targetNodeId="xkfh.6611318383329531274" resolveInfo="ExtensionRef" />
               </node>
             </node>
           </node>
@@ -402,7 +402,7 @@
         <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="647742758948740059" nodeInfo="nr">
           <property name="name" nameId="tpck.1169194664001" value="errorExt" />
           <node role="type" roleId="tpee.5680397130376446158" type="tp25.SNodeType" typeId="tp25.1138055754698" id="647742758948740054" nodeInfo="in">
-            <link role="concept" roleId="tp25.1138405853777" targetNodeId="xkfh.6611318383329531274" resolveInfo="ExtensionRef_stock" />
+            <link role="concept" roleId="tp25.1138405853777" targetNodeId="xkfh.6611318383329531274" resolveInfo="ExtensionRef" />
           </node>
           <node role="initializer" roleId="tpee.1068431790190" type="tpee.NullLiteral" typeId="tpee.1070534058343" id="647742758948742513" nodeInfo="nn" />
         </node>
@@ -418,7 +418,7 @@
               <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_GetDescendantsOperation" typeId="tp25.1171305280644" id="647742758947931440" nodeInfo="nn">
                 <node role="parameter" roleId="tp25.1144104376918" type="tp25.OperationParm_Concept" typeId="tp25.1144101972840" id="647742758947931441" nodeInfo="ng">
                   <node role="conceptArgument" roleId="tp25.1207343664468" type="tp25.RefConcept_Reference" typeId="tp25.1177026924588" id="647742758948314500" nodeInfo="nn">
-                    <link role="conceptDeclaration" roleId="tp25.1177026940964" targetNodeId="xkfh.6611318383329531274" resolveInfo="ExtensionRef_stock" />
+                    <link role="conceptDeclaration" roleId="tp25.1177026940964" targetNodeId="xkfh.6611318383329531274" resolveInfo="ExtensionRef" />
                   </node>
                 </node>
               </node>
@@ -609,7 +609,7 @@
     </node>
     <node role="applicableNode" roleId="tpd4.1174648101952" type="tpd4.ConceptReference" typeId="tpd4.1174642788531" id="6611318383329447278" nodeInfo="ig">
       <property name="name" nameId="tpck.1169194664001" value="extensionRef_stock" />
-      <link role="concept" roleId="tpd4.1174642800329" targetNodeId="xkfh.6611318383329531274" resolveInfo="ExtensionRef_stock" />
+      <link role="concept" roleId="tpd4.1174642800329" targetNodeId="xkfh.6611318383329531274" resolveInfo="ExtensionRef" />
     </node>
   </root>
   <root type="tpd4.NonTypesystemRule" typeId="tpd4.1195214364922" id="647742758948923471" nodeInfo="ng">
@@ -620,13 +620,13 @@
           <property name="name" nameId="tpck.1169194664001" value="extensions" />
           <node role="type" roleId="tpee.5680397130376446158" type="tp2q.SequenceType" typeId="tp2q.1151689724996" id="647742758948923475" nodeInfo="in">
             <node role="elementType" roleId="tp2q.1151689745422" type="tp25.SNodeType" typeId="tp25.1138055754698" id="647742758948923476" nodeInfo="in">
-              <link role="concept" roleId="tp25.1138405853777" targetNodeId="xkfh.6611318383329531274" resolveInfo="ExtensionRef_stock" />
+              <link role="concept" roleId="tp25.1138405853777" targetNodeId="xkfh.6611318383329531274" resolveInfo="ExtensionRef" />
             </node>
           </node>
           <node role="initializer" roleId="tpee.1068431790190" type="tpee.GenericNewExpression" typeId="tpee.1145552977093" id="647742758948923477" nodeInfo="nn">
             <node role="creator" roleId="tpee.1145553007750" type="tp2q.SequenceCreator" typeId="tp2q.1224414427926" id="647742758948923478" nodeInfo="nn">
               <node role="elementType" roleId="tp2q.1224414456414" type="tp25.SNodeType" typeId="tp25.1138055754698" id="647742758948923479" nodeInfo="in">
-                <link role="concept" roleId="tp25.1138405853777" targetNodeId="xkfh.6611318383329531274" resolveInfo="ExtensionRef_stock" />
+                <link role="concept" roleId="tp25.1138405853777" targetNodeId="xkfh.6611318383329531274" resolveInfo="ExtensionRef" />
               </node>
             </node>
           </node>
@@ -790,7 +790,7 @@
     </node>
     <node role="applicableNode" roleId="tpd4.1174648101952" type="tpd4.ConceptReference" typeId="tpd4.1174642788531" id="647742758948923598" nodeInfo="ig">
       <property name="name" nameId="tpck.1169194664001" value="extensionRef_stock" />
-      <link role="concept" roleId="tpd4.1174642800329" targetNodeId="xkfh.6611318383329531274" resolveInfo="ExtensionRef_stock" />
+      <link role="concept" roleId="tpd4.1174642800329" targetNodeId="xkfh.6611318383329531274" resolveInfo="ExtensionRef" />
     </node>
   </root>
   <root type="tpd4.NonTypesystemRule" typeId="tpd4.1195214364922" id="647742758949204334" nodeInfo="ng">
@@ -981,7 +981,7 @@
     </node>
     <node role="applicableNode" roleId="tpd4.1174648101952" type="tpd4.ConceptReference" typeId="tpd4.1174642788531" id="647742758949204408" nodeInfo="ig">
       <property name="name" nameId="tpck.1169194664001" value="extensionRef_stock" />
-      <link role="concept" roleId="tpd4.1174642800329" targetNodeId="xkfh.6611318383329531274" resolveInfo="ExtensionRef_stock" />
+      <link role="concept" roleId="tpd4.1174642800329" targetNodeId="xkfh.6611318383329531274" resolveInfo="ExtensionRef" />
     </node>
   </root>
 </model>

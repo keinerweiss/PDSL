@@ -29,11 +29,11 @@ public class BehaviorAspectDescriptor implements jetbrains.mps.smodel.runtime.Be
       case 8:
         return new VersionRef_BehaviorDescriptor();
       case 1:
-        return new ExtensionRef_stock_BehaviorDescriptor();
+        return new ExtensionRef_BehaviorDescriptor();
       default:
         return BehaviorAspectInterpreted.getInstance().getDescriptor(fqName);
     }
   }
 
-  private static String[] stringSwitchCases_846f5o_a0a0b = new String[]{"TYPO3Stock.structure.Extension", "TYPO3Stock.structure.ExtensionRef_stock", "TYPO3Stock.structure.Feature", "TYPO3Stock.structure.FeatureRef", "TYPO3Stock.structure.Purpose", "TYPO3Stock.structure.PurposeRef", "TYPO3Stock.structure.Stock", "TYPO3Stock.structure.Version", "TYPO3Stock.structure.VersionRef"};
+  private static String[] stringSwitchCases_846f5o_a0a0b = new String[]{"TYPO3Stock.structure.Extension", "TYPO3Stock.structure.ExtensionRef", "TYPO3Stock.structure.Feature", "TYPO3Stock.structure.FeatureRef", "TYPO3Stock.structure.Purpose", "TYPO3Stock.structure.PurposeRef", "TYPO3Stock.structure.Stock", "TYPO3Stock.structure.Version", "TYPO3Stock.structure.VersionRef"};
 }

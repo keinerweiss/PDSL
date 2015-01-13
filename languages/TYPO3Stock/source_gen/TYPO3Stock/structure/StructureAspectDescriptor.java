@@ -16,7 +16,7 @@ public class StructureAspectDescriptor implements jetbrains.mps.smodel.runtime.S
       case 0:
         return new ConceptDescriptorBuilder("TYPO3Stock.structure.Extension").super_("jetbrains.mps.lang.core.structure.BaseConcept").parents("jetbrains.mps.lang.core.structure.BaseConcept", "jetbrains.mps.lang.core.structure.INamedConcept").properties("version", "source").references("Preconfiguration").children(new String[]{"incompatibleExtensions", "incompatibleTYPO3Versions", "incompatibleFeatures"}, new boolean[]{true, true, true}).alias("extension", "").create();
       case 1:
-        return new ConceptDescriptorBuilder("TYPO3Stock.structure.ExtensionRef_stock").super_("jetbrains.mps.lang.core.structure.BaseConcept").parents("jetbrains.mps.lang.core.structure.BaseConcept").references("extension").create();
+        return new ConceptDescriptorBuilder("TYPO3Stock.structure.ExtensionRef").super_("jetbrains.mps.lang.core.structure.BaseConcept").parents("jetbrains.mps.lang.core.structure.BaseConcept").references("extension").create();
       case 2:
         return new ConceptDescriptorBuilder("TYPO3Stock.structure.Feature").super_("jetbrains.mps.lang.core.structure.BaseConcept").parents("jetbrains.mps.lang.core.structure.BaseConcept", "jetbrains.mps.lang.core.structure.INamedConcept").properties("id").alias("feature", "").create();
       case 3:
@@ -36,5 +36,5 @@ public class StructureAspectDescriptor implements jetbrains.mps.smodel.runtime.S
     }
   }
 
-  private static String[] stringSwitchCases_1htk8d_a0a0b = new String[]{"TYPO3Stock.structure.Extension", "TYPO3Stock.structure.ExtensionRef_stock", "TYPO3Stock.structure.Feature", "TYPO3Stock.structure.FeatureRef", "TYPO3Stock.structure.Purpose", "TYPO3Stock.structure.PurposeRef", "TYPO3Stock.structure.Stock", "TYPO3Stock.structure.Version", "TYPO3Stock.structure.VersionRef"};
+  private static String[] stringSwitchCases_1htk8d_a0a0b = new String[]{"TYPO3Stock.structure.Extension", "TYPO3Stock.structure.ExtensionRef", "TYPO3Stock.structure.Feature", "TYPO3Stock.structure.FeatureRef", "TYPO3Stock.structure.Purpose", "TYPO3Stock.structure.PurposeRef", "TYPO3Stock.structure.Stock", "TYPO3Stock.structure.Version", "TYPO3Stock.structure.VersionRef"};
 }

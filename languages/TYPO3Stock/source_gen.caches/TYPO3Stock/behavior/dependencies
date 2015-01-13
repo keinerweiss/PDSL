@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dependenciesRoot>
   <dependency className="TYPO3Stock.behavior.BehaviorAspectDescriptor" file="BehaviorAspectDescriptor.java">
-    <classNode dependClassName="TYPO3Stock.behavior.ExtensionRef_stock_BehaviorDescriptor" />
+    <classNode dependClassName="TYPO3Stock.behavior.ExtensionRef_BehaviorDescriptor" />
     <classNode dependClassName="TYPO3Stock.behavior.Extension_BehaviorDescriptor" />
     <classNode dependClassName="TYPO3Stock.behavior.FeatureRef_BehaviorDescriptor" />
     <classNode dependClassName="TYPO3Stock.behavior.Feature_BehaviorDescriptor" />
@@ -16,7 +16,7 @@
     <classNode dependClassName="jetbrains.mps.smodel.runtime.interpreted.BehaviorAspectInterpreted" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.BehaviorAspectDescriptor" />
   </dependency>
-  <dependency className="TYPO3Stock.behavior.ExtensionRef_stock_BehaviorDescriptor" file="ExtensionRef_stock_BehaviorDescriptor.java">
+  <dependency className="TYPO3Stock.behavior.ExtensionRef_BehaviorDescriptor" file="ExtensionRef_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="jetbrains.mps.lang.core.behavior.BaseConcept_BehaviorDescriptor" />

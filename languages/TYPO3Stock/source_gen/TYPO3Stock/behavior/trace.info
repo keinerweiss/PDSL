@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debugInfo>
   <unitInfo fileName="BehaviorAspectDescriptor.java" startLine="9" startPosition="0" endLine="40" endPosition="0" unitName="TYPO3Stock.behavior.BehaviorAspectDescriptor" />
-  <unitInfo fileName="ExtensionRef_stock_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="TYPO3Stock.behavior.ExtensionRef_stock_BehaviorDescriptor" />
+  <unitInfo fileName="ExtensionRef_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="TYPO3Stock.behavior.ExtensionRef_BehaviorDescriptor" />
   <unitInfo fileName="Extension_BehaviorDescriptor.java" startLine="10" startPosition="0" endLine="23" endPosition="0" unitName="TYPO3Stock.behavior.Extension_BehaviorDescriptor" />
   <unitInfo fileName="FeatureRef_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="TYPO3Stock.behavior.FeatureRef_BehaviorDescriptor" />
   <unitInfo fileName="Feature_BehaviorDescriptor.java" startLine="10" startPosition="0" endLine="23" endPosition="0" unitName="TYPO3Stock.behavior.Feature_BehaviorDescriptor" />

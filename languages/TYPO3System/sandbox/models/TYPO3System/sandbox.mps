@@ -8,7 +8,7 @@
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="k5kc" modelUID="r:b7a865c5-34fe-4061-a116-63a7e68a4f2f(TYPO3Presets.structure)" version="9" implicit="yes" />
   <import index="guq0" modelUID="r:424c65cf-f1d2-449a-a330-4dcce5269a11(TYPO3System.structure)" version="9" implicit="yes" />
-  <import index="xkfh" modelUID="r:a43fb49c-b6c0-4d4f-851b-48276855d059(TYPO3Stock.structure)" version="10" implicit="yes" />
+  <import index="xkfh" modelUID="r:a43fb49c-b6c0-4d4f-851b-48276855d059(TYPO3Stock.structure)" version="11" implicit="yes" />
   <import index="vhjm" modelUID="r:cc253de2-9198-4f52-9f3f-23596c670e7b(SoftwareSystems.structure)" version="0" implicit="yes" />
   <root type="k5kc.Preset" typeId="k5kc.4446906832555667564" id="3598894899136208456" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="SimplePreset" />
@@ -16,10 +16,10 @@
     <node role="AvailableFeatures" roleId="k5kc.4446906832555671511" type="xkfh.FeatureRef" typeId="xkfh.25423937595158285" id="25423937595583912" nodeInfo="ng">
       <link role="feature" roleId="xkfh.25423937595158286" targetNodeId="3598894899136394133" resolveInfo="Multidomain" />
     </node>
-    <node role="AvailableExtensions" roleId="k5kc.4446906832555673334" type="xkfh.ExtensionRef_stock" typeId="xkfh.6611318383329531274" id="647742758947910703" nodeInfo="ng">
+    <node role="AvailableExtensions" roleId="k5kc.4446906832555673334" type="xkfh.ExtensionRef" typeId="xkfh.6611318383329531274" id="647742758947910703" nodeInfo="ng">
       <link role="extension" roleId="xkfh.6611318383329531275" targetNodeId="6611318383329711373" resolveInfo="news" />
     </node>
-    <node role="AvailableExtensions" roleId="k5kc.4446906832555673334" type="xkfh.ExtensionRef_stock" typeId="xkfh.6611318383329531274" id="647742758947910707" nodeInfo="ng">
+    <node role="AvailableExtensions" roleId="k5kc.4446906832555673334" type="xkfh.ExtensionRef" typeId="xkfh.6611318383329531274" id="647742758947910707" nodeInfo="ng">
       <link role="extension" roleId="xkfh.6611318383329531275" targetNodeId="3598894899136394204" resolveInfo="seo" />
     </node>
     <node role="AvailableVersions" roleId="k5kc.4446906832555671533" type="k5kc.VersionRef" typeId="k5kc.4446906832555669752" id="25423937595584013" nodeInfo="ng">
@@ -41,21 +41,21 @@
       <property name="firstname" nameId="guq0.4446906832555664309" value="Test" />
       <property name="lastname" nameId="guq0.4446906832555667490" value="Test" />
       <property name="email" nameId="guq0.4446906832555664307" value="test@test.de" />
-      <link role="role" roleId="guq0.3598894899136280778" targetNodeId="3598894899136387113" resolveInfo="Role" />
+      <link role="role" roleId="guq0.3598894899136280778" targetNodeId="3598894899136387113" resolveInfo="Redakteur" />
     </node>
     <node role="Features" roleId="guq0.4446906832555664298" type="xkfh.FeatureRef" typeId="xkfh.25423937595158285" id="25423937595584010" nodeInfo="ng">
       <link role="feature" roleId="xkfh.25423937595158286" targetNodeId="3598894899136392027" resolveInfo="Multilanguage" />
     </node>
     <node role="Roles" roleId="guq0.3598894899136147970" type="guq0.Role" typeId="guq0.4446906832555667505" id="3598894899136251345" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="Test" />
+      <property name="name" nameId="tpck.1169194664001" value="RTest" />
     </node>
     <node role="Roles" roleId="guq0.3598894899136147970" type="guq0.Role" typeId="guq0.4446906832555667505" id="3598894899136842035" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="Foo" />
     </node>
-    <node role="Extensions" roleId="guq0.3598894899136472688" type="xkfh.ExtensionRef_stock" typeId="xkfh.6611318383329531274" id="647742758947878778" nodeInfo="ng">
+    <node role="Extensions" roleId="guq0.3598894899136472688" type="xkfh.ExtensionRef" typeId="xkfh.6611318383329531274" id="647742758947878778" nodeInfo="ng">
       <link role="extension" roleId="xkfh.6611318383329531275" targetNodeId="6611318383329711373" resolveInfo="news" />
     </node>
-    <node role="Extensions" roleId="guq0.3598894899136472688" type="xkfh.ExtensionRef_stock" typeId="xkfh.6611318383329531274" id="647742758949330191" nodeInfo="ng">
+    <node role="Extensions" roleId="guq0.3598894899136472688" type="xkfh.ExtensionRef" typeId="xkfh.6611318383329531274" id="647742758949330191" nodeInfo="ng">
       <link role="extension" roleId="xkfh.6611318383329531275" targetNodeId="3598894899136394204" resolveInfo="seo" />
     </node>
   </root>
@@ -80,13 +80,13 @@
     <node role="AvailableFeatures" roleId="k5kc.4446906832555671511" type="xkfh.FeatureRef" typeId="xkfh.25423937595158285" id="25423937595211727" nodeInfo="ng">
       <link role="feature" roleId="xkfh.25423937595158286" targetNodeId="3598894899136394133" resolveInfo="Multidomain" />
     </node>
-    <node role="AvailableExtensions" roleId="k5kc.4446906832555673334" type="xkfh.ExtensionRef_stock" typeId="xkfh.6611318383329531274" id="647742758947829807" nodeInfo="ng">
+    <node role="AvailableExtensions" roleId="k5kc.4446906832555673334" type="xkfh.ExtensionRef" typeId="xkfh.6611318383329531274" id="647742758947829807" nodeInfo="ng">
       <link role="extension" roleId="xkfh.6611318383329531275" targetNodeId="6611318383329711373" resolveInfo="news" />
     </node>
-    <node role="AvailableExtensions" roleId="k5kc.4446906832555673334" type="xkfh.ExtensionRef_stock" typeId="xkfh.6611318383329531274" id="647742758947829812" nodeInfo="ng">
+    <node role="AvailableExtensions" roleId="k5kc.4446906832555673334" type="xkfh.ExtensionRef" typeId="xkfh.6611318383329531274" id="647742758947829812" nodeInfo="ng">
       <link role="extension" roleId="xkfh.6611318383329531275" targetNodeId="647742758946978808" resolveInfo="tt_news" />
     </node>
-    <node role="AvailableExtensions" roleId="k5kc.4446906832555673334" type="xkfh.ExtensionRef_stock" typeId="xkfh.6611318383329531274" id="647742758947829817" nodeInfo="ng">
+    <node role="AvailableExtensions" roleId="k5kc.4446906832555673334" type="xkfh.ExtensionRef" typeId="xkfh.6611318383329531274" id="647742758947829817" nodeInfo="ng">
       <link role="extension" roleId="xkfh.6611318383329531275" targetNodeId="3598894899136394204" resolveInfo="seo" />
     </node>
   </root>
@@ -95,33 +95,30 @@
     <link role="Preset" roleId="vhjm.3598894899136228863" targetNodeId="3598894899136350870" resolveInfo="PressPortal" />
     <link role="Version" roleId="guq0.647742758949037886" targetNodeId="25423937595142198" resolveInfo="4.5" />
     <node role="Tenants" roleId="guq0.25423937595248105" type="guq0.Tenant" typeId="guq0.25423937595248051" id="6611318383327711820" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="Hans" />
+      <property name="name" nameId="tpck.1169194664001" value="Marwein AG" />
     </node>
     <node role="Tenants" roleId="guq0.25423937595248105" type="guq0.Tenant" typeId="guq0.25423937595248051" id="6611318383327711822" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="Günther" />
+      <property name="name" nameId="tpck.1169194664001" value="Regidur Inc" />
     </node>
     <node role="Users" roleId="guq0.3598894899135860810" type="guq0.User" typeId="guq0.4446906832555664304" id="3598894899136387115" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="held" />
-      <property name="firstname" nameId="guq0.4446906832555664309" value="Held" />
-      <property name="lastname" nameId="guq0.4446906832555667490" value="Held" />
-      <property name="email" nameId="guq0.4446906832555664307" value="held@held.de" />
-      <link role="role" roleId="guq0.3598894899136280778" targetNodeId="3598894899136251345" resolveInfo="Test" />
+      <property name="name" nameId="tpck.1169194664001" value="maxm" />
+      <property name="firstname" nameId="guq0.4446906832555664309" value="Max" />
+      <property name="lastname" nameId="guq0.4446906832555667490" value="Mustermann" />
+      <property name="email" nameId="guq0.4446906832555664307" value="mm@example.com" />
+      <link role="role" roleId="guq0.3598894899136280778" targetNodeId="3598894899136387113" resolveInfo="Redakteur" />
     </node>
     <node role="Users" roleId="guq0.3598894899135860810" type="guq0.User" typeId="guq0.4446906832555664304" id="6611318383329422462" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="tom" />
-      <property name="firstname" nameId="guq0.4446906832555664309" value="tom" />
-      <property name="lastname" nameId="guq0.4446906832555667490" value="tom" />
-      <property name="email" nameId="guq0.4446906832555664307" value="tom@tomtom.de" />
-      <link role="role" roleId="guq0.3598894899136280778" targetNodeId="6611318383328630089" resolveInfo="Fooo" />
+      <property name="name" nameId="tpck.1169194664001" value="tomt" />
+      <property name="firstname" nameId="guq0.4446906832555664309" value="Tom" />
+      <property name="lastname" nameId="guq0.4446906832555667490" value="Taylor" />
+      <property name="email" nameId="guq0.4446906832555664307" value="tt@example.com" />
+      <link role="role" roleId="guq0.3598894899136280778" targetNodeId="6611318383328630089" resolveInfo="Personalabteilung" />
     </node>
     <node role="Roles" roleId="guq0.3598894899136147970" type="guq0.Role" typeId="guq0.4446906832555667505" id="3598894899136387113" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="Role" />
+      <property name="name" nameId="tpck.1169194664001" value="Redakteur" />
     </node>
     <node role="Roles" roleId="guq0.3598894899136147970" type="guq0.Role" typeId="guq0.4446906832555667505" id="6611318383328630089" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="Fooo" />
-    </node>
-    <node role="Features" roleId="guq0.4446906832555664298" type="xkfh.FeatureRef" typeId="xkfh.25423937595158285" id="6611318383327077678" nodeInfo="ng">
-      <link role="feature" roleId="xkfh.25423937595158286" targetNodeId="3598894899136392027" resolveInfo="Multilanguage" />
+      <property name="name" nameId="tpck.1169194664001" value="Personalabteilung" />
     </node>
     <node role="Features" roleId="guq0.4446906832555664298" type="xkfh.FeatureRef" typeId="xkfh.25423937595158285" id="6611318383327509660" nodeInfo="ng">
       <link role="feature" roleId="xkfh.25423937595158286" targetNodeId="3598894899136394133" resolveInfo="Multidomain" />
@@ -129,8 +126,11 @@
     <node role="Features" roleId="guq0.4446906832555664298" type="xkfh.FeatureRef" typeId="xkfh.25423937595158285" id="647742758949908427" nodeInfo="ng">
       <link role="feature" roleId="xkfh.25423937595158286" targetNodeId="25423937595488919" resolveInfo="Multitenant" />
     </node>
-    <node role="Extensions" roleId="guq0.3598894899136472688" type="xkfh.ExtensionRef_stock" typeId="xkfh.6611318383329531274" id="647742758947628514" nodeInfo="ng">
+    <node role="Extensions" roleId="guq0.3598894899136472688" type="xkfh.ExtensionRef" typeId="xkfh.6611318383329531274" id="647742758947628514" nodeInfo="ng">
       <link role="extension" roleId="xkfh.6611318383329531275" targetNodeId="647742758946978808" resolveInfo="tt_news" />
+    </node>
+    <node role="Extensions" roleId="guq0.3598894899136472688" type="xkfh.ExtensionRef" typeId="xkfh.6611318383329531274" id="5121422335684349875" nodeInfo="ng">
+      <link role="extension" roleId="xkfh.6611318383329531275" targetNodeId="3598894899136394204" resolveInfo="seo" />
     </node>
   </root>
   <root type="xkfh.Stock" typeId="xkfh.3598894899136486579" id="3598894899136392026" nodeInfo="ng">
@@ -147,7 +147,7 @@
       <property name="name" nameId="tpck.1169194664001" value="news" />
       <property name="version" nameId="xkfh.3598894899136486576" value="6.2" />
       <property name="source" nameId="xkfh.3598894899136486577" value="xxx" />
-      <node role="incompatibleExtensions" roleId="xkfh.6611318383329473097" type="xkfh.ExtensionRef_stock" typeId="xkfh.6611318383329531274" id="647742758948874443" nodeInfo="ng">
+      <node role="incompatibleExtensions" roleId="xkfh.6611318383329473097" type="xkfh.ExtensionRef" typeId="xkfh.6611318383329531274" id="647742758948874443" nodeInfo="ng">
         <link role="extension" roleId="xkfh.6611318383329531275" targetNodeId="647742758946978808" resolveInfo="tt_news" />
       </node>
       <node role="incompatibleTYPO3Versions" roleId="xkfh.6611318383329477833" type="xkfh.VersionRef" typeId="xkfh.6611318383329477863" id="647742758949306170" nodeInfo="ng">

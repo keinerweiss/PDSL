@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dependencies version="2" modelHash="-8kh5a6hhm87kp05mro9bs5hc8pknahq">
+<dependencies version="2" modelHash="-2eodec0xaallr7ranaokx9im2pilu6q">
   <dep model="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" hash="5sdbpqxziyuazpb9j1p4zdk6bnvbn49" />
   <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" hash="-5mgxduek28h3ywdzzsk4capaz4hgjm0" />
   <dep model="r:00000000-0000-4000-0000-011c895902cd(jetbrains.mps.baseLanguage.generator.java.main@generator)" hash="303xz1b2lyseld0axia86q3lpvucmq6" />
   <dep model="r:b4d7d620-6723-4aa2-856b-118497e84e9e(jetbrains.mps.baseLanguage.generator.java.strings@generator)" hash="b4ewbuz42qcbg1awca5bacgi0vopxqt" />
   <dep model="r:f04c1476-2f91-4f59-be13-c8e009abebee(jetbrains.mps.baseLanguageInternal.generator.template.main@generator)" hash="a8elw7fctzg6sg8fe36u9gzu42axhdb" />
-  <common hash="2d6043fbvxuskkptx1k3uppaxopeql4" dependsOnNodes="true">
+  <common hash="-axtwbfc2s90o59mlfj9az693lptqwbw" dependsOnNodes="true">
     <dep root="25423937595136851" />
     <dep root="25423937595158285" />
     <dep root="25423937595211819" />
@@ -22,7 +22,7 @@
     <dep model="r:f04c1476-2f91-4f59-be13-c8e009abebee(jetbrains.mps.baseLanguageInternal.generator.template.main@generator)" />
     <file name="StructureAspectDescriptor.java" />
   </common>
-  <source id="3598894899136486574" name="Extension" hash="-ehuyg9jsasnppxv7jj2g6h5a7gps8pk" />
+  <source id="3598894899136486574" name="Extension" hash="-a3p785zrk4ucnz6oh5e77c612fgirwj" />
   <source id="3598894899136486579" name="Stock" hash="6ka1366mfqhr2x7g30gwoazqk3tyxip" />
   <source id="3598894899136486583" name="Feature" hash="6r3syfwyi01jz6oitg5yd0ya3mnvg9d" />
   <source id="3598894899136486588" name="Purpose" hash="4f55a1hp6drrsovt8948w4be8kz2yj1" />
@@ -30,6 +30,6 @@
   <source id="25423937595158285" name="FeatureRef" hash="4ghhmxt9kuzkyy6n584w90vvyk0dgs" />
   <source id="25423937595211819" name="PurposeRef" hash="hfz8z0qfszq7t5487web4f7ey6yzer" />
   <source id="6611318383329477863" name="VersionRef" hash="9i9jy90jbqcnmvori0c2taqp0sefhho" />
-  <source id="6611318383329531274" name="ExtensionRef_stock" hash="-4l9uq08ipmftmto8lb0xaw4yjx5qp94" />
+  <source id="6611318383329531274" name="ExtensionRef" hash="-25bwgalahsz5r8dr0c62gow8q3vu40o" />
 </dependencies>
 

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dependenciesRoot>
   <dependency className="TYPO3Stock.editor.EditorAspectDescriptorImpl" file="EditorAspectDescriptorImpl.java">
-    <classNode dependClassName="TYPO3Stock.editor.ExtensionRef_stock_Editor" />
+    <classNode dependClassName="TYPO3Stock.editor.ExtensionRef_Editor" />
     <classNode dependClassName="TYPO3Stock.editor.FeatureRef_Editor" />
     <classNode dependClassName="TYPO3Stock.editor.PurposeRef_Editor" />
     <classNode dependClassName="TYPO3Stock.editor.VersionRef_Editor" />
@@ -14,7 +14,7 @@
     <classNode dependClassName="jetbrains.mps.smodel.runtime.ConceptDescriptor" />
     <classNode extendsClassName="jetbrains.mps.openapi.editor.descriptor.EditorAspectDescriptor" />
   </dependency>
-  <dependency className="TYPO3Stock.editor.ExtensionRef_stock_Editor" file="ExtensionRef_stock_Editor.java">
+  <dependency className="TYPO3Stock.editor.ExtensionRef_Editor" file="ExtensionRef_Editor.java">
     <classNode dependClassName="java.lang.Class" />
     <classNode dependClassName="jetbrains.mps.editor.runtime.style.StyleAttributes" />
     <classNode dependClassName="jetbrains.mps.editor.runtime.style.StyleImpl" />

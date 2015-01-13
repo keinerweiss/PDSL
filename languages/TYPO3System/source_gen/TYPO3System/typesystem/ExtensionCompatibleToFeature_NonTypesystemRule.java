@@ -49,7 +49,7 @@ public class ExtensionCompatibleToFeature_NonTypesystemRule extends AbstractNonT
   }
 
   public String getApplicableConceptFQName() {
-    return "TYPO3Stock.structure.ExtensionRef_stock";
+    return "TYPO3Stock.structure.ExtensionRef";
   }
 
   public IsApplicableStatus isApplicableAndPattern(SNode argument) {

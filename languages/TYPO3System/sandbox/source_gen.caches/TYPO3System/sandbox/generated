@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dependencies version="2" modelHash="6qhrtekvx7nhsrpjgsnsn54eekphnbz">
-  <common hash="uy1234airgaknohblgr6am7sr5q2yt" />
-  <source id="3598894899136208456" name="SimplePreset" hash="-b4d5o9jwkjry5yj8ik927gnx3smg2st">
+<dependencies version="2" modelHash="5sbvk52lcbag5phfuzodtr0ww83p3yf">
+  <common hash="85sovdo4cdlax14ry5l2xue7dhr5cld" />
+  <source id="3598894899136208456" name="SimplePreset" hash="cmp49qm5jjofcdyh1w5yoic7opj8y67">
     <file name="SimplePreset" />
   </source>
-  <source id="3598894899136228857" name="Simple" hash="-2pdde7tt5tv519jp08oh3l5af8tlpcz">
-    <file name="Simple" />
+  <source id="3598894899136228857" name="Simple" hash="bl9vjpmjc93osuxlgpzjpsyzvwru5f9">
+    <file name="Simple.json" />
   </source>
-  <source id="3598894899136350870" name="PressPortal" hash="af5p8ace3yvpwmghgjkwibkmxeprc9p">
+  <source id="3598894899136350870" name="PressPortal" hash="cp3lnnzavhyli5fmdikjxltvl8mbhhv">
     <file name="PressPortal" />
   </source>
-  <source id="3598894899136386940" name="PresseKunde" hash="-8ra518ohb5upboeix9mkfygt9838loo">
-    <file name="PresseKunde" />
+  <source id="3598894899136386940" name="PresseKunde" hash="-p8r7w77l204xypsld3asp6cccmrbws">
+    <file name="PresseKunde.json" />
   </source>
-  <source id="3598894899136392026" hash="-8rqg75enec6nb8n7sqs6m2d8sah4nky" />
+  <source id="3598894899136392026" hash="-7o8ihofppan1zaz67w0of7raxyagaix" />
 </dependencies>
 

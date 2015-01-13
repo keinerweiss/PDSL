@@ -82,5 +82,11 @@
     </dependencies>
     <rename id="xkfh.6611318383329531274" type="CONCEPT" from="ExtensionRef" to="ExtensionRef_stock" />
   </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="xkfh" modelUID="r:a43fb49c-b6c0-4d4f-851b-48276855d059(TYPO3Stock.structure)" version="10" />
+    </dependencies>
+    <rename id="xkfh.6611318383329531274" type="CONCEPT" from="ExtensionRef_stock" to="ExtensionRef" />
+  </StructureModification>
 </history>
 
