@@ -7,3 +7,6 @@
 /drools-distribution-6.1.0.Final/examples
 /drools-distribution-6.1.0.Final/javadoc
 /drools-distribution-6.1.0.Final/reference_manual
+classes_gen
+source_gen
+source_gen.caches
