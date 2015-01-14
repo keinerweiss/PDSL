@@ -6,5 +6,6 @@
 	<classpathentry exported="true" kind="con" path="DROOLS/Drools"/>
 	<classpathentry exported="true" kind="lib" path="C:/Users/Rüdiger/Documents/Studium/Thesis/PDSL/Jess71p2/lib/jess.jar"/>
 	<classpathentry exported="true" kind="lib" path="C:/Users/Rüdiger/Documents/Studium/Thesis/PDSL/Jess71p2/lib/jsr94.jar"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/DroolsRemote"/>
 	<classpathentry kind="output" path="target"/>
 </classpath>
