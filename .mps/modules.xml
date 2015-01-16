@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MPSProject">
+    <projectModules>
+      <modulePath path="$PROJECT_DIR$/languages/PresetLanguage/PresetLanguage.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/SoftwareSystems/SoftwareSystems.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/SystemDecisions/SystemDecisions.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/SystemPresets/SystemPresets.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/TYPO3Presets/TYPO3Presets.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/TYPO3Presets/runtime/TYPO3Presets.runtime.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/TYPO3Presets/sandbox/TYPO3Presets.sandbox.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/TYPO3Stock/TYPO3Stock.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/TYPO3System/TYPO3System.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/TYPO3System/runtime/TYPO3System.runtime.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/TYPO3System/sandbox/TYPO3System.sandbox.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/Test/Test.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/UserLanguage/UserLanguage.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/UserLanguage/runtime/UserLanguage.runtime.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/UserLanguage/sandbox/UserLanguage.sandbox.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/ExternalSource/ExternalSource.msd" folder="" />
+    </projectModules>
+  </component>
+</project>
+
