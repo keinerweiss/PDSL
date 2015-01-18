@@ -11,11 +11,14 @@ import java.util.List;
 
 public abstract class TYPO3System_JSON {
   public static void typo3system(SNode system, final SNodeTextGen textGen) {
-    textGen.append("{\n");
+    textGen.append("{");
+    textGen.appendNewLine();
     TYPO3System_JSON.name(SPropertyOperations.getString(system, "name"), textGen);
-    textGen.append(",\n");
+    textGen.append(",");
+    textGen.appendNewLine();
     TYPO3System_JSON.version(SPropertyOperations.getString(SLinkOperations.getTarget(system, "Version", false), "name"), textGen);
-    textGen.append(",\n");
+    textGen.append(",");
+    textGen.appendNewLine();
 
     boolean hasTenants = false;
     for (SNode f : ListSequence.fromList(SLinkOperations.getTargets(system, "Features", true))) {
@@ -68,7 +71,8 @@ public abstract class TYPO3System_JSON {
       for (SNode f : ListSequence.fromList(features)) {
         TYPO3System_JSON.Feature(SLinkOperations.getTarget(f, "feature", false), textGen);
         if (++index != last) {
-          textGen.append(",\n");
+          textGen.append(",");
+          textGen.appendNewLine();
         } else {
           textGen.appendNewLine();
         }
@@ -90,7 +94,8 @@ public abstract class TYPO3System_JSON {
       for (SNode e : ListSequence.fromList(extensions)) {
         TYPO3System_JSON.Extension(SLinkOperations.getTarget(e, "extension", false), textGen);
         if (++index != last) {
-          textGen.append(",\n");
+          textGen.append(",");
+          textGen.appendNewLine();
         } else {
           textGen.appendNewLine();
         }
@@ -112,7 +117,8 @@ public abstract class TYPO3System_JSON {
       for (SNode r : ListSequence.fromList(roles)) {
         TYPO3System_JSON.Role(r, users, textGen);
         if (++index != last) {
-          textGen.append(",\n");
+          textGen.append(",");
+          textGen.appendNewLine();
         } else {
           textGen.appendNewLine();
         }
@@ -134,7 +140,8 @@ public abstract class TYPO3System_JSON {
       for (SNode u : ListSequence.fromList(users)) {
         TYPO3System_JSON.User(u, textGen);
         if (++index != last) {
-          textGen.append(",\n");
+          textGen.append(",");
+          textGen.appendNewLine();
         } else {
           textGen.appendNewLine();
         }
@@ -156,7 +163,8 @@ public abstract class TYPO3System_JSON {
       for (SNode t : ListSequence.fromList(tenants)) {
         TYPO3System_JSON.Tenant(t, textGen);
         if (++index != last) {
-          textGen.append(",\n");
+          textGen.append(",");
+          textGen.appendNewLine();
         } else {
           textGen.appendNewLine();
         }
@@ -218,22 +226,23 @@ public abstract class TYPO3System_JSON {
   }
 
   public static void User(SNode user, final SNodeTextGen textGen) {
-    textGen.append("{\n\"username\": \"");
+    textGen.append("{\"username\": \"");
     textGen.append(SPropertyOperations.getString(user, "name"));
-    textGen.append("\",\n");
+    textGen.append("\",");
+    textGen.appendNewLine();
 
     textGen.append("\"password\": \"");
     textGen.append(SPropertyOperations.getString(user, "name"));
-    textGen.append("PW\",\n");
-
+    textGen.append("PW\",");
+    textGen.appendNewLine();
     textGen.append("\"realName\": \"");
     textGen.append(SPropertyOperations.getString(user, "firstname"));
     textGen.append(" ");
     textGen.append(SPropertyOperations.getString(user, "lastname"));
-    textGen.append("\",\n");
-
+    textGen.append("\",");
+    textGen.appendNewLine();
     textGen.append("\"email\": \"");
     textGen.append(SPropertyOperations.getString(user, "email"));
-    textGen.append("\"\n}");
+    textGen.append("\"}");
   }
 }

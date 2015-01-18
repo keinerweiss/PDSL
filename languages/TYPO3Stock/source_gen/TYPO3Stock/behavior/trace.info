@@ -7,7 +7,7 @@
   <unitInfo fileName="Feature_BehaviorDescriptor.java" startLine="10" startPosition="0" endLine="23" endPosition="0" unitName="TYPO3Stock.behavior.Feature_BehaviorDescriptor" />
   <unitInfo fileName="PurposeRef_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="TYPO3Stock.behavior.PurposeRef_BehaviorDescriptor" />
   <unitInfo fileName="Purpose_BehaviorDescriptor.java" startLine="10" startPosition="0" endLine="23" endPosition="0" unitName="TYPO3Stock.behavior.Purpose_BehaviorDescriptor" />
-  <unitInfo fileName="Stock_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="TYPO3Stock.behavior.Stock_BehaviorDescriptor" />
+  <unitInfo fileName="Stock_BehaviorDescriptor.java" startLine="10" startPosition="0" endLine="23" endPosition="0" unitName="TYPO3Stock.behavior.Stock_BehaviorDescriptor" />
   <unitInfo fileName="VersionRef_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="TYPO3Stock.behavior.VersionRef_BehaviorDescriptor" />
   <unitInfo fileName="Version_BehaviorDescriptor.java" startLine="10" startPosition="0" endLine="23" endPosition="0" unitName="TYPO3Stock.behavior.Version_BehaviorDescriptor" />
 </debugInfo>

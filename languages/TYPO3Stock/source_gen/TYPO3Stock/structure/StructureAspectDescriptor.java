@@ -26,7 +26,7 @@ public class StructureAspectDescriptor implements jetbrains.mps.smodel.runtime.S
       case 5:
         return new ConceptDescriptorBuilder("TYPO3Stock.structure.PurposeRef").super_("jetbrains.mps.lang.core.structure.BaseConcept").parents("jetbrains.mps.lang.core.structure.BaseConcept").references("purpose").create();
       case 6:
-        return new ConceptDescriptorBuilder("TYPO3Stock.structure.Stock").super_("jetbrains.mps.lang.core.structure.BaseConcept").parents("jetbrains.mps.lang.core.structure.BaseConcept").children(new String[]{"TYPO3Versions", "Extensions", "Features", "Purpose"}, new boolean[]{true, true, true, true}).create();
+        return new ConceptDescriptorBuilder("TYPO3Stock.structure.Stock").super_("jetbrains.mps.lang.core.structure.BaseConcept").parents("jetbrains.mps.lang.core.structure.BaseConcept", "jetbrains.mps.lang.core.structure.INamedConcept").children(new String[]{"TYPO3Versions", "Extensions", "Features", "Purpose"}, new boolean[]{true, true, true, true}).create();
       case 7:
         return new ConceptDescriptorBuilder("TYPO3Stock.structure.Version").super_("jetbrains.mps.lang.core.structure.BaseConcept").parents("jetbrains.mps.lang.core.structure.BaseConcept", "jetbrains.mps.lang.core.structure.INamedConcept").create();
       case 8:

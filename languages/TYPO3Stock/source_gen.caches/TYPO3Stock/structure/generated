@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dependencies version="2" modelHash="2ik1g7j5k3uau6kmuq7tov9yrha9eq2">
+<dependencies version="2" modelHash="-527ghxns7j9lh9k0tnv2amv41c3vfnm">
   <dep model="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" hash="5sdbpqxziyuazpb9j1p4zdk6bnvbn49" />
   <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" hash="-5mgxduek28h3ywdzzsk4capaz4hgjm0" />
   <dep model="r:00000000-0000-4000-0000-011c895902cd(jetbrains.mps.baseLanguage.generator.java.main@generator)" hash="303xz1b2lyseld0axia86q3lpvucmq6" />
@@ -23,7 +23,7 @@
     <file name="StructureAspectDescriptor.java" />
   </common>
   <source id="3598894899136486574" name="Extension" hash="-a3p785zrk4ucnz6oh5e77c612fgirwj" />
-  <source id="3598894899136486579" name="Stock" hash="6ka1366mfqhr2x7g30gwoazqk3tyxip" />
+  <source id="3598894899136486579" name="Stock" hash="5siibfl2m9vf8gd62jc06m8qwpoatpz" />
   <source id="3598894899136486583" name="Feature" hash="6r3syfwyi01jz6oitg5yd0ya3mnvg9d" />
   <source id="3598894899136486588" name="Purpose" hash="4f55a1hp6drrsovt8948w4be8kz2yj1" />
   <source id="25423937595136851" name="Version" hash="8y1g865l463zkm7cggva4xc3oxn9kwt" />

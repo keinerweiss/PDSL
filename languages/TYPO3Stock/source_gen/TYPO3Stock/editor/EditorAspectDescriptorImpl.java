@@ -16,12 +16,22 @@ public class EditorAspectDescriptorImpl implements EditorAspectDescriptor {
   public Collection<ConceptEditor> getEditors(ConceptDescriptor descriptor) {
     switch (Arrays.binarySearch(stringSwitchCases_xbvbvu_a0a0b, descriptor.getConceptFqName())) {
       case 0:
-        return Collections.<ConceptEditor>singletonList(new ExtensionRef_Editor());
+        return Collections.<ConceptEditor>singletonList(new Extension_Editor());
       case 1:
-        return Collections.<ConceptEditor>singletonList(new FeatureRef_Editor());
+        return Collections.<ConceptEditor>singletonList(new ExtensionRef_Editor());
       case 2:
-        return Collections.<ConceptEditor>singletonList(new PurposeRef_Editor());
+        return Collections.<ConceptEditor>singletonList(new Feature_Editor());
       case 3:
+        return Collections.<ConceptEditor>singletonList(new FeatureRef_Editor());
+      case 4:
+        return Collections.<ConceptEditor>singletonList(new Purpose_Editor());
+      case 5:
+        return Collections.<ConceptEditor>singletonList(new PurposeRef_Editor());
+      case 6:
+        return Collections.<ConceptEditor>singletonList(new Stock_Editor());
+      case 7:
+        return Collections.<ConceptEditor>singletonList(new Version_Editor());
+      case 8:
         return Collections.<ConceptEditor>singletonList(new VersionRef_Editor());
       default:
     }
@@ -34,5 +44,5 @@ public class EditorAspectDescriptorImpl implements EditorAspectDescriptor {
 
 
 
-  private static String[] stringSwitchCases_xbvbvu_a0a0b = new String[]{"TYPO3Stock.structure.ExtensionRef", "TYPO3Stock.structure.FeatureRef", "TYPO3Stock.structure.PurposeRef", "TYPO3Stock.structure.VersionRef"};
+  private static String[] stringSwitchCases_xbvbvu_a0a0b = new String[]{"TYPO3Stock.structure.Extension", "TYPO3Stock.structure.ExtensionRef", "TYPO3Stock.structure.Feature", "TYPO3Stock.structure.FeatureRef", "TYPO3Stock.structure.Purpose", "TYPO3Stock.structure.PurposeRef", "TYPO3Stock.structure.Stock", "TYPO3Stock.structure.Version", "TYPO3Stock.structure.VersionRef"};
 }

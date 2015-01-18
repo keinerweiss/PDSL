@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dependenciesRoot>
+  <dependency className="TYPO3System.sandbox.Basis" file="CompatibilityRules.drl" />
   <dependency className="TYPO3System.sandbox.PresseKunde" file="System.json" />
+  <dependency className="TYPO3System.sandbox.PressPortal" file="preset.drl" />
 </dependenciesRoot>
 
