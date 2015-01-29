@@ -13,9 +13,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.internal.collections.runtime.IWhereFilter;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
-import jetbrains.mps.errors.messageTargets.MessageTarget;
-import jetbrains.mps.errors.messageTargets.NodeMessageTarget;
-import jetbrains.mps.errors.IErrorReporter;
 import jetbrains.mps.smodel.SModelUtil_new;
 
 public class UserRoleAssignedInSystem_NonTypesystemRule extends AbstractNonTypesystemRule_Runtime implements NonTypesystemRule_Runtime {
@@ -36,10 +33,7 @@ public class UserRoleAssignedInSystem_NonTypesystemRule extends AbstractNonTypes
     }
 
     if (Sequence.fromIterable(roles).count() > 1) {
-      {
-        MessageTarget errorTarget = new NodeMessageTarget();
-        IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(user, "Role must be defined here", "r:9811afae-d085-4269-a724-76a259cea2b2(TYPO3System.typesystem)", "6611318383329291885", null, errorTarget);
-      }
+      // <node> 
     }
   }
 

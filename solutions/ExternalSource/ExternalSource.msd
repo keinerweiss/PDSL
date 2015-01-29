@@ -5,14 +5,13 @@
       <sourceRoot path="${module}/models" />
     </modelRoot>
     <modelRoot contentPath="${module}" type="java_classes">
-      <sourceRoot path="${module}" />
+      <sourceRoot path="${module}/PDSLData.jar" />
+      <sourceRoot path="${module}/DroolsTest.jar" />
     </modelRoot>
   </models>
   <stubModelEntries>
-    <stubModelEntry path="C:/Users/Rüdiger/Documents/Studium/Thesis/PDSL/drools-distribution-6.1.0.Final/binaries" />
-    <stubModelEntry path="C:/Users/Rüdiger/Documents/Studium/Thesis/PDSL/Jess71p2/lib" />
-    <stubModelEntry path="C:/Users/Rüdiger/Documents/Studium/Thesis/PDSL/drools-distribution-6.1.0.Final/sources" />
-    <stubModelEntry path="${module}" />
+    <stubModelEntry path="${module}/DroolsTest.jar" />
+    <stubModelEntry path="${module}/PDSLData.jar" />
   </stubModelEntries>
   <sourcePath />
   <usedLanguages>

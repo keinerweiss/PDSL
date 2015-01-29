@@ -15,9 +15,6 @@ import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.internal.collections.runtime.IVisitor;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
-import jetbrains.mps.errors.messageTargets.MessageTarget;
-import jetbrains.mps.errors.messageTargets.NodeMessageTarget;
-import jetbrains.mps.errors.IErrorReporter;
 import jetbrains.mps.smodel.SModelUtil_new;
 
 public class ExtensionCompatibleToVersion_NonTypesystemRule extends AbstractNonTypesystemRule_Runtime implements NonTypesystemRule_Runtime {
@@ -38,10 +35,7 @@ public class ExtensionCompatibleToVersion_NonTypesystemRule extends AbstractNonT
     });
 
     if (err.value) {
-      {
-        MessageTarget errorTarget = new NodeMessageTarget();
-        IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(extensionRef_stock, "Sorry, " + SPropertyOperations.getString(SLinkOperations.getTarget(extensionRef_stock, "extension", false), "name") + " is incompatibe to system " + SPropertyOperations.getString(SLinkOperations.getTarget(system, "Version", false), "name") + ".", "r:9811afae-d085-4269-a724-76a259cea2b2(TYPO3System.typesystem)", "647742758948923574", null, errorTarget);
-      }
+      // <node> 
     }
   }
 

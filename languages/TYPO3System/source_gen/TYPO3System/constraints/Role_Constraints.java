@@ -7,9 +7,6 @@ import org.jetbrains.annotations.Nullable;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.smodel.IOperationContext;
 import jetbrains.mps.smodel.runtime.CheckingNodeContext;
-import java.util.Map;
-import jetbrains.mps.smodel.runtime.PropertyConstraintsDescriptor;
-import java.util.HashMap;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
@@ -34,12 +31,6 @@ public class Role_Constraints extends BaseConstraintsDescriptor {
     }
 
     return result;
-  }
-
-  @Override
-  protected Map<String, PropertyConstraintsDescriptor> getNotDefaultProperties() {
-    Map<String, PropertyConstraintsDescriptor> properties = new HashMap();
-    return properties;
   }
 
   public static boolean static_canBeAChild(SNode node, SNode parentNode, SNode link, SNode childConcept, final IOperationContext operationContext) {

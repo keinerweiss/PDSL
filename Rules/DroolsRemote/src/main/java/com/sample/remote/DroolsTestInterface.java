@@ -7,6 +7,18 @@ import org.kie.api.KieServices;
 import org.kie.api.runtime.KieContainer;
 import org.kie.api.runtime.KieSession;
 
+import pdsl.data.AvailableExtension;
+import pdsl.data.AvailableFeature;
+import pdsl.data.AvailableVersion;
+import pdsl.data.ConfigurationData;
+import pdsl.data.Extension;
+import pdsl.data.Feature;
+import pdsl.data.Role;
+import pdsl.data.StatusResponseList;
+import pdsl.data.SystemData;
+import pdsl.data.User;
+import pdsl.data.Version;
+
 /**
  * This is a sample class to launch a rule.
  */
@@ -18,54 +30,55 @@ public class DroolsTestInterface extends UnicastRemoteObject implements IRMIData
 		super();
 	}
 
-    public final boolean isValid(String data) throws RemoteException {
+    public final StatusResponseList runRules(ConfigurationData configurationData, SystemData systemData) throws RemoteException {
+    	StatusResponseList statusResponse = new StatusResponseList();
         try {
             // load up the knowledge base
 	        KieServices ks = KieServices.Factory.get();
     	    KieContainer kContainer = ks.getKieClasspathContainer();
         	KieSession kSession = kContainer.newKieSession("ksession-rules");
-
-            // go !
-            Message message = new Message();
-            message.setMessage("Hello World");
-            message.setStatus(Message.HELLO);
-            kSession.insert(message);
-            kSession.fireAllRules();
+        	
+        	/**
+        	 * Prepare the configuration base
+        	 */
+        	for(AvailableVersion v : configurationData.getAvailableVersions()) {
+        		kSession.insert(v);
+        	}
+        	for(AvailableFeature f : configurationData.getAvailableFeatures()) {
+        		kSession.insert(f);
+        	}
+        	for(AvailableExtension e : configurationData.getAvailableExtensions()) {
+        		kSession.insert(e);
+        	}
+        	
+        	/**
+        	 * Prepare the system currently in use
+        	 */
+        	Version version = systemData.getVersion();
+        	kSession.insert(version);
+        	
+        	for(Extension e : systemData.getExtensions()) {
+        		kSession.insert(e);
+        	}
+        	for(Feature f : systemData.getFeatures()) {
+        		kSession.insert(f);
+        	}
+        	for(Role r : systemData.getRoles()) {
+        		kSession.insert(r);
+        	}
+        	for(User u : systemData.getUsers()) {
+        		kSession.insert(u);
+        	}
+        	
+        	kSession.insert(statusResponse);
+        	
+        	kSession.fireAllRules();
+        	
         } catch (Throwable t) {
             t.printStackTrace();
         }
-        if(data.equals("foo")) {
-        	return false;
-        } else {
-        	return true;	
-        }
-    }
-
-    public static class Message {
-
-        public static final int HELLO = 0;
-        public static final int GOODBYE = 1;
-
-        private String message;
-
-        private int status;
-
-        public String getMessage() {
-            return this.message;
-        }
-
-        public void setMessage(String message) {
-            this.message = message;
-        }
-
-        public int getStatus() {
-            return this.status;
-        }
-
-        public void setStatus(int status) {
-            this.status = status;
-        }
-
+        return statusResponse;
+        
     }
 
 }

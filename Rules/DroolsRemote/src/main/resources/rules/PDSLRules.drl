@@ -1,0 +1,152 @@
+package com.sample
+ 
+import pdsl.data.AvailableExtension;
+import pdsl.data.AvailableFeature;
+import pdsl.data.AvailableVersion;
+import pdsl.data.ConfigurationData;
+import pdsl.data.Extension;
+import pdsl.data.Feature;
+import pdsl.data.SystemData;
+import pdsl.data.StatusResponse;
+import pdsl.data.StatusResponseList;
+import pdsl.data.Version;
+import pdsl.data.Role;
+import pdsl.data.User;
+
+rule "Extension availability"
+    when
+    	$statusReport : StatusResponseList()
+        $e : Extension( )
+        not AvailableExtension( name == $e.name )
+    then
+    	StatusResponse response = new StatusResponse();
+    	response.status = false;
+    	response.ruleScope = "extension";
+    	response.ruleTarget = $e.getName();
+    	response.errorMessage = "Extension "+$e.getName()+" is not supported.";
+    	$statusReport.add(response);
+        System.out.println( "Extension "+$e.getName()+" is not supported." );
+end
+
+rule "Version availability"
+    when
+    	$statusReport : StatusResponseList()
+        $v : Version( )
+        not AvailableVersion( name == $v.name )
+    then
+    	StatusResponse response = new StatusResponse();
+    	response.status = false;
+    	response.ruleScope = "version";
+    	response.ruleTarget = $v.getName();
+    	response.errorMessage = "Version "+$v.getName()+" is not supported.";
+    	$statusReport.add(response);
+        System.out.println( "Version "+$v.getName()+" is not supported." );
+end
+
+rule "Feature availability"
+    when
+    	$statusReport : StatusResponseList()
+        $f : Feature( )
+        not AvailableFeature( name == $f.name )
+    then
+    	StatusResponse response = new StatusResponse();
+    	response.status = false;
+    	response.ruleScope = "feature";
+    	response.ruleTarget = $f.getName();
+    	response.errorMessage = "Feature "+$f.getName()+" is not supported.";
+    	$statusReport.add(response);
+        System.out.println( "Feature "+$f.getName()+" is not supported." );
+end
+
+rule "Extension inter-incompatibility"
+	lock-on-active true
+    when
+    	$statusReport : StatusResponseList()
+        $e : Extension( )
+        $ae : AvailableExtension( incompatibleWithExtensions contains $e.name )
+        Extension( name == $ae.name )
+    then
+    	StatusResponse response = new StatusResponse();
+    	response.status = false;
+    	response.ruleScope = "extension";
+    	response.ruleTarget = $e.getName();
+    	response.errorMessage = "Extension "+$e.getName()+" is incompatible with "+$ae.getName()+".";
+    	$statusReport.add(response);
+        System.out.println( "Extension "+$e.getName()+" is incompatible with "+$ae.getName()+"." );
+end
+
+rule "seo and news with multitenant"
+    when
+    	$statusReport : StatusResponseList()
+        $e : Extension( name == "news" )
+        Extension( name == "seo" )
+        Feature( name == "multitenant" )        
+    then
+    	StatusResponse response = new StatusResponse();
+    	response.status = false;
+    	response.ruleScope = "extension";
+    	response.ruleTarget = $e.getName();
+    	response.errorMessage = "Extension "+$e.getName()+" is known to make problems in combination of news and the mutitenant feature.";
+    	$statusReport.add(response);
+        System.out.println( "Extension "+$e.getName()+" is known to make problems in combination of news and the mutitenant feature." );
+end
+
+rule "roles must be unique"
+    when
+    	$statusReport : StatusResponseList()
+        $r : Role(  )
+        Role( this != $r, name == $r.name )
+    then
+    	StatusResponse response = new StatusResponse();
+    	response.status = false;
+    	response.ruleScope = "role";
+    	response.ruleTarget = $r.getName();
+    	response.errorMessage = "Role "+$r.getName()+" is defined multiple times.";
+    	$statusReport.add(response);
+        System.out.println( "Role "+$r.getName()+" is defined multiple times." );
+end
+
+rule "users must be unique"
+    when
+    	$statusReport : StatusResponseList()
+        $u : User(  )
+        User( this != $u, name == $u.name ) 
+    then
+    	StatusResponse response = new StatusResponse();
+    	response.status = false;
+    	response.ruleScope = "user";
+    	response.ruleTarget = $u.getName();
+    	response.errorMessage = "User "+$u.getName()+" is defined multiple times.";
+    	$statusReport.add(response);
+        System.out.println( "User "+$u.getName()+" is defined multiple times." );
+end
+
+rule "user role must exist in system"
+    when
+    	$statusReport : StatusResponseList()
+        $u : User( )
+        exists Role( name == $u.role ) 
+    then
+    	StatusResponse response = new StatusResponse();
+    	response.status = false;
+    	response.ruleScope = "user";
+    	response.ruleTarget = $u.getName();
+    	response.errorMessage = "The user role "+$u.role+" does not exist in system.";
+    	$statusReport.add(response);
+        System.out.println( "The user role "+$u.role+" does not exist in system." );
+end
+
+rule "uniqueness of extension"
+    when
+    	$statusReport : StatusResponseList()
+        $e : Extension( )
+        Extension( this != $e, name == $e.name ) 
+    then
+    	StatusResponse response = new StatusResponse();
+    	response.status = false;
+    	response.ruleScope = "extension";
+    	response.ruleTarget = $e.getName();
+    	response.errorMessage = "Extensions "+ $e.getName() +" is assigned multiple times.";
+    	$statusReport.add(response);
+        System.out.println( "Extensions "+ $e.getName() +" is assigned multiple times." );
+end

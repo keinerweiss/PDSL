@@ -27,6 +27,8 @@
   </generators>
   <sourcePath />
   <dependencies>
+    <dependency reexport="false">04dfd8c4-f56a-4dfd-9f03-f04ec6935405(ExternalSource)</dependency>
+    <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
     <dependency reexport="false">495d58bd-a3be-4d08-afa4-5fa0caf8fb22(TYPO3Presets)</dependency>
     <dependency reexport="false">99ffd3f5-5f40-469a-9602-1112021e8d52(TYPO3Stock)</dependency>
     <dependency reexport="false">2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)</dependency>

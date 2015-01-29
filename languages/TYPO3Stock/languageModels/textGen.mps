@@ -390,7 +390,7 @@
               <node role="body" roleId="tpee.1154032183016" type="tpee.StatementList" typeId="tpee.1068580123136" id="5051880750500827157" nodeInfo="sn">
                 <node role="statement" roleId="tpee.1068581517665" type="2omo.AppendOperation" typeId="2omo.1237306079178" id="5051880750500907796" nodeInfo="nn">
                   <node role="part" roleId="2omo.1237306115446" type="2omo.ConstantStringAppendPart" typeId="2omo.1237305557638" id="5051880750500907797" nodeInfo="ng">
-                    <property name="value" nameId="2omo.1237305576108" value="rule Version compatibility of extension " />
+                    <property name="value" nameId="2omo.1237305576108" value="rule &quot;Version compatibility of extension " />
                   </node>
                   <node role="part" roleId="2omo.1237306115446" type="2omo.NodeAppendPart" typeId="2omo.1237305334312" id="5051880750500907798" nodeInfo="ng">
                     <node role="value" roleId="2omo.1237305790512" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5051880750500907799" nodeInfo="nn">

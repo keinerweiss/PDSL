@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dependencies version="2" modelHash="96c35bx1n3zi756041mpkj9bbhu25la">
+<dependencies version="2" modelHash="-5qsxqgo4t5fuyatxne5m4k5clghjng7">
   <dep model="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
   <dep model="f:java_stub#8865b7a8-5271-43d3-884c-6fd1d9cfdd34#org.jetbrains.mps.openapi.model(MPS.OpenAPI/org.jetbrains.mps.openapi.model@java_stub)" />
   <dep model="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" hash="61wht9cj3icmq9lpyigsv7597eepxrl" />
@@ -9,12 +9,12 @@
   <dep model="r:00000000-0000-4000-0000-011c89590303(jetbrains.mps.lang.smodel.generator.baseLanguage.template.main@generator)" hash="-8z73tx2nml9xagbxlfmq60ehji8q3f5" />
   <dep model="r:229ce18d-2bb0-4d5b-a7cd-cec65841e459(jetbrains.mps.lang.behavior.generator.template.main@generator)" hash="-1vtu6uptzx5l7n2n68xt5em9d6nhvec" />
   <dep model="r:314576fc-3aee-4386-a0a5-a38348ac317d(jetbrains.mps.scope)" hash="-b6mpqybnuok6zagtggmbp0m5ppennrs" />
-  <dep model="r:424c65cf-f1d2-449a-a330-4dcce5269a11(TYPO3System.structure)" hash="1jxpib2ntgf16typpkhvjwsu5sc41zq" />
+  <dep model="r:424c65cf-f1d2-449a-a330-4dcce5269a11(TYPO3System.structure)" hash="-16gcnx2qndyhlefyeznfc0804pnipy0" />
   <dep model="r:89f44d1a-bb6d-4dd8-8e45-ef5ab1e35bbd(SoftwareSystems.behavior)" hash="-9cx4f5p39jqx1oi5agip58pa2h8j274" />
   <dep model="r:b4d7d620-6723-4aa2-856b-118497e84e9e(jetbrains.mps.baseLanguage.generator.java.strings@generator)" hash="b4ewbuz42qcbg1awca5bacgi0vopxqt" />
   <dep model="r:cc253de2-9198-4f52-9f3f-23596c670e7b(SoftwareSystems.structure)" hash="-9rz92zcqeu3bxzc2r2o859mvrmalztk" />
   <dep model="r:f04c1476-2f91-4f59-be13-c8e009abebee(jetbrains.mps.baseLanguageInternal.generator.template.main@generator)" hash="a8elw7fctzg6sg8fe36u9gzu42axhdb" />
-  <common hash="-3z7qhv4frt442tfjzrx3lbid5x3zc28" dependsOnNodes="true">
+  <common hash="89mnqeh116ru5m239nfom4lmn5t9vf1" dependsOnNodes="true">
     <dep root="3598894899137207432" />
     <dep model="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" />
     <dep model="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />

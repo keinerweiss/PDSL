@@ -16,6 +16,13 @@
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
   <dependency className="UserLanguage.behavior.System_Behavior" file="System_Behavior.java">
+    <classNode dependClassName="com.sample.DroolsTest" />
+    <classNode dependClassName="java.lang.ClassLoader" />
+    <classNode dependClassName="java.lang.Thread" />
+    <classNode dependClassName="java.lang.Throwable" />
+    <classNode dependClassName="org.apache.log4j.Level" />
+    <classNode dependClassName="org.apache.log4j.LogManager" />
+    <classNode dependClassName="org.apache.log4j.Logger" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
   </dependency>
   <dependency className="UserLanguage.behavior.System_BehaviorDescriptor" file="System_BehaviorDescriptor.java">

@@ -8,7 +8,7 @@
   <dep model="r:00000000-0000-4000-0000-011c89590303(jetbrains.mps.lang.smodel.generator.baseLanguage.template.main@generator)" hash="-8z73tx2nml9xagbxlfmq60ehji8q3f5" />
   <dep model="r:1e88207e-a8e3-4e7e-8d9b-916f60cbdc61(jetbrains.mps.lang.textGen.generator.template.main@generator)" hash="2dmcrv2ms72bspqknfyxvb6b7exhx9o" />
   <dep model="r:3b7ed80f-6cfd-45bc-b051-2f66c620dd27(jetbrains.mps.lang.traceable.structure)" hash="9wy5xay4fxryhg7hl9tcowq0jfepue8" />
-  <dep model="r:424c65cf-f1d2-449a-a330-4dcce5269a11(TYPO3System.structure)" hash="1jxpib2ntgf16typpkhvjwsu5sc41zq" />
+  <dep model="r:424c65cf-f1d2-449a-a330-4dcce5269a11(TYPO3System.structure)" hash="-16gcnx2qndyhlefyeznfc0804pnipy0" />
   <dep model="r:a43fb49c-b6c0-4d4f-851b-48276855d059(TYPO3Stock.structure)" hash="-527ghxns7j9lh9k0tnv2amv41c3vfnm" />
   <dep model="r:b4d7d620-6723-4aa2-856b-118497e84e9e(jetbrains.mps.baseLanguage.generator.java.strings@generator)" hash="b4ewbuz42qcbg1awca5bacgi0vopxqt" />
   <dep model="r:c3548bac-30eb-4a2a-937c-0111d5697309(jetbrains.mps.lang.smodel.generator.smodelAdapter)" hash="e5zswcvgdspmt039m3gg97emcadi0ez" />

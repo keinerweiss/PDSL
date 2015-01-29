@@ -1,5 +1,9 @@
 package com.sample;
 
+import java.io.FileNotFoundException;
+import java.io.PrintWriter;
+import java.io.UnsupportedEncodingException;
+
 import javax.swing.JOptionPane;
 
 import org.kie.api.KieServices;
@@ -12,11 +16,14 @@ import org.kie.api.runtime.KieSession;
  */
 public class DroolsTest {
 
-    public static final void main(String[] args) {
+    public static final void main(String[] args) throws FileNotFoundException, UnsupportedEncodingException {
     	runRule();
     }
 	
-    public static final void runRule() {
+    public static final void runRule() throws FileNotFoundException, UnsupportedEncodingException {
+    	PrintWriter writer = new PrintWriter("C:/Users/R/Desktop/running.txt", "UTF-8");
+    	writer.println("The first line");
+    	writer.close();
         try {
             // load up the knowledge base
 	        KieServices ks = KieServices.Factory.get();
@@ -33,9 +40,14 @@ public class DroolsTest {
             JOptionPane.showMessageDialog(null, "Starting rule engine");
     	    System.out.println("Success");
         } catch (Throwable t) {
+        	JOptionPane.showMessageDialog(null, "Failed rule engine" + t.getMessage());
             t.printStackTrace();
             System.out.println("No Success");
-        }
+        } 
+        JOptionPane.showMessageDialog(null, "Dieser Dialog kommt nicht");
+        PrintWriter writer2 = new PrintWriter("C:/Users/R/Desktop/stopping.txt", "UTF-8");
+    	writer2.println("The first line");
+    	writer2.close();
     }
     
     public static class Message {
